@@ -1,15 +1,18 @@
 # See docs at: https://mystmd.org/guide/frontmatter
+
 version: 1
+
 project:
   id: b6cf3a53-8b3b-43b2-881f-f4a18b59fac4
-  # title:
-  # description:
-  # keywords: []
-  # authors: []
+  title: Mantenimiento Predictivo de Bomba Industrial
+  description: EDA, Machine Learning y Dashboard para mantenimiento predictivo de bombas industriales.
   github: https://github.com/nvargas0530/pump_sensor
-  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+
+  toc:
+    - file: README.md
+    - title: Análisis Exploratorio y Machine Learning
+      children:
+        - file: notebooks/EDA_ML_sensor_pump.ipynb
+
 site:
   template: book-theme
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
