@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Análisis Exploratorio + Machine Learning — Sensores de una Bomba Industrial &#8212; My sample book</title>
   
@@ -17,57 +16,57 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'EDA_ML_sensor_pump';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -83,19 +82,8 @@ const thebe_selector_output = ".output, .cell_output"
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -103,7 +91,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -111,8 +98,8 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -128,7 +115,8 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -158,11 +146,18 @@ const thebe_selector_output = ".output, .cell_output"
     
     
     <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -182,9 +177,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -203,9 +203,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -314,7 +314,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -328,27 +328,19 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -416,7 +408,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="analisis-exploratorio-machine-learning-sensores-de-una-bomba-industrial">
-<h1>Análisis Exploratorio + Machine Learning — Sensores de una Bomba Industrial<a class="headerlink" href="#analisis-exploratorio-machine-learning-sensores-de-una-bomba-industrial" title="Permalink to this heading">#</a></h1>
+<h1>Análisis Exploratorio + Machine Learning — Sensores de una Bomba Industrial<a class="headerlink" href="#analisis-exploratorio-machine-learning-sensores-de-una-bomba-industrial" title="Link to this heading">#</a></h1>
 <p><strong>Mantenimiento predictivo a partir de la telemetría de 52 sensores</strong></p>
 <p>Este notebook aplica de forma integral los <strong>Módulos 2, 3, 4 y 5</strong> del curso
 <em>Ciencia de datos con Python para la toma de decisiones</em>:</p>
@@ -435,7 +427,7 @@ reproducible.</p>
 </div></blockquote>
 <hr class="docutils" />
 <section id="contexto-de-negocio">
-<h2>Contexto de negocio<a class="headerlink" href="#contexto-de-negocio" title="Permalink to this heading">#</a></h2>
+<h2>Contexto de negocio<a class="headerlink" href="#contexto-de-negocio" title="Link to this heading">#</a></h2>
 <p>Una bomba industrial está instrumentada con <strong>52 sensores</strong> que registran una medición
 <strong>cada minuto</strong>. La variable <code class="docutils literal notranslate"><span class="pre">machine_status</span></code> etiqueta el estado (<code class="docutils literal notranslate"><span class="pre">NORMAL</span></code>, <code class="docutils literal notranslate"><span class="pre">RECOVERING</span></code>,
 <code class="docutils literal notranslate"><span class="pre">BROKEN</span></code>). Una parada no planificada detiene la producción y genera sobrecostos.</p>
@@ -443,7 +435,7 @@ reproducible.</p>
 estado anómalo de la máquina</strong> a partir de los sensores, para anticipar fallas.</p>
 </section>
 <section id="configuracion-del-entorno-e-importacion-de-librerias">
-<h2>0. Configuración del entorno e importación de librerías<a class="headerlink" href="#configuracion-del-entorno-e-importacion-de-librerias" title="Permalink to this heading">#</a></h2>
+<h2>0. Configuración del entorno e importación de librerías<a class="headerlink" href="#configuracion-del-entorno-e-importacion-de-librerias" title="Link to this heading">#</a></h2>
 <p><strong>Qué:</strong> importamos las librerías de datos (<code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>), estadística (<code class="docutils literal notranslate"><span class="pre">scipy</span></code>),
 visualización (<code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">seaborn</span></code>, <code class="docutils literal notranslate"><span class="pre">plotly</span></code>) y machine learning (<code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>).</p>
 <p><strong>Por qué:</strong> centralizar las importaciones hace el notebook reproducible y deja explícitas
@@ -466,50 +458,47 @@ las dependencias (listadas en <code class="docutils literal notranslate"><span c
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s2">&quot;display.max_columns&quot;</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s2">&quot;display.width&quot;</span><span class="p">,</span> <span class="mi">160</span><span class="p">)</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;t&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Librerías cargadas correctamente.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> 
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> 
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;numpy&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Librerías cargadas correctamente.
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="carga-y-lectura-del-dataset">
-<h2>1. Carga y lectura del dataset<a class="headerlink" href="#carga-y-lectura-del-dataset" title="Permalink to this heading">#</a></h2>
+<h2>1. Carga y lectura del dataset<a class="headerlink" href="#carga-y-lectura-del-dataset" title="Link to this heading">#</a></h2>
 <p><strong>Qué:</strong> leemos <code class="docutils literal notranslate"><span class="pre">data/sensor.csv.gz</span></code>. El archivo se distribuye <strong>comprimido en gzip</strong>
 porque el CSV original (~119 MB) supera el límite de 100 MB por archivo de GitHub; <code class="docutils literal notranslate"><span class="pre">pandas</span></code>
 lo descomprime al vuelo. Usamos una ruta relativa para que el notebook sea portable.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
-<span class="n">candidatos</span> <span class="o">=</span> <span class="p">[</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;data/sensor.csv.gz&quot;</span><span class="p">),</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;../data/sensor.csv.gz&quot;</span><span class="p">)]</span>
-<span class="n">ruta</span> <span class="o">=</span> <span class="nb">next</span><span class="p">((</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">candidatos</span> <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">exists</span><span class="p">()),</span> <span class="n">candidatos</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">ruta</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;../data/sensor.csv.gz&quot;</span><span class="p">)</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">ruta</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="s2">&quot;infer&quot;</span><span class="p">)</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Cargado desde: </span><span class="si">{</span><span class="n">ruta</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dimensiones: </span><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> filas x </span><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2"> columnas&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cargado desde: C:\Users\Sebastian\Desktop\pump_sensor_dash\data\sensor.csv.gz
+Dimensiones: 220,320 filas x 55 columnas
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="exploracion-inicial">
-<h2>2. Exploración inicial<a class="headerlink" href="#exploracion-inicial" title="Permalink to this heading">#</a></h2>
+<h2>2. Exploración inicial<a class="headerlink" href="#exploracion-inicial" title="Link to this heading">#</a></h2>
 <p><strong>Qué:</strong> inspeccionamos las primeras filas (<code class="docutils literal notranslate"><span class="pre">head</span></code>), la forma (<code class="docutils literal notranslate"><span class="pre">shape</span></code>) y la información
 general (<code class="docutils literal notranslate"><span class="pre">info</span></code>).</p>
 <p><strong>Por qué:</strong> es el primer contacto con la estructura: cuántos registros y variables hay,
@@ -520,11 +509,184 @@ qué representa cada columna y dónde podría haber nulos.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>timestamp</th>
+      <th>sensor_00</th>
+      <th>sensor_01</th>
+      <th>sensor_02</th>
+      <th>sensor_03</th>
+      <th>sensor_04</th>
+      <th>sensor_05</th>
+      <th>sensor_06</th>
+      <th>sensor_07</th>
+      <th>...</th>
+      <th>sensor_43</th>
+      <th>sensor_44</th>
+      <th>sensor_45</th>
+      <th>sensor_46</th>
+      <th>sensor_47</th>
+      <th>sensor_48</th>
+      <th>sensor_49</th>
+      <th>sensor_50</th>
+      <th>sensor_51</th>
+      <th>machine_status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>2018-04-01 00:00:00</td>
+      <td>2.465394</td>
+      <td>47.09201</td>
+      <td>53.2118</td>
+      <td>46.310760</td>
+      <td>634.3750</td>
+      <td>76.45975</td>
+      <td>13.41146</td>
+      <td>16.13136</td>
+      <td>...</td>
+      <td>41.92708</td>
+      <td>39.641200</td>
+      <td>65.68287</td>
+      <td>50.92593</td>
+      <td>38.194440</td>
+      <td>157.9861</td>
+      <td>67.70834</td>
+      <td>243.0556</td>
+      <td>201.3889</td>
+      <td>NORMAL</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2018-04-01 00:01:00</td>
+      <td>2.465394</td>
+      <td>47.09201</td>
+      <td>53.2118</td>
+      <td>46.310760</td>
+      <td>634.3750</td>
+      <td>76.45975</td>
+      <td>13.41146</td>
+      <td>16.13136</td>
+      <td>...</td>
+      <td>41.92708</td>
+      <td>39.641200</td>
+      <td>65.68287</td>
+      <td>50.92593</td>
+      <td>38.194440</td>
+      <td>157.9861</td>
+      <td>67.70834</td>
+      <td>243.0556</td>
+      <td>201.3889</td>
+      <td>NORMAL</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>2018-04-01 00:02:00</td>
+      <td>2.444734</td>
+      <td>47.35243</td>
+      <td>53.2118</td>
+      <td>46.397570</td>
+      <td>638.8889</td>
+      <td>73.54598</td>
+      <td>13.32465</td>
+      <td>16.03733</td>
+      <td>...</td>
+      <td>41.66666</td>
+      <td>39.351852</td>
+      <td>65.39352</td>
+      <td>51.21528</td>
+      <td>38.194443</td>
+      <td>155.9606</td>
+      <td>67.12963</td>
+      <td>241.3194</td>
+      <td>203.7037</td>
+      <td>NORMAL</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>2018-04-01 00:03:00</td>
+      <td>2.460474</td>
+      <td>47.09201</td>
+      <td>53.1684</td>
+      <td>46.397568</td>
+      <td>628.1250</td>
+      <td>76.98898</td>
+      <td>13.31742</td>
+      <td>16.24711</td>
+      <td>...</td>
+      <td>40.88541</td>
+      <td>39.062500</td>
+      <td>64.81481</td>
+      <td>51.21528</td>
+      <td>38.194440</td>
+      <td>155.9606</td>
+      <td>66.84028</td>
+      <td>240.4514</td>
+      <td>203.1250</td>
+      <td>NORMAL</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>2018-04-01 00:04:00</td>
+      <td>2.445718</td>
+      <td>47.13541</td>
+      <td>53.2118</td>
+      <td>46.397568</td>
+      <td>636.4583</td>
+      <td>76.58897</td>
+      <td>13.35359</td>
+      <td>16.21094</td>
+      <td>...</td>
+      <td>41.40625</td>
+      <td>38.773150</td>
+      <td>65.10416</td>
+      <td>51.79398</td>
+      <td>38.773150</td>
+      <td>158.2755</td>
+      <td>66.55093</td>
+      <td>242.1875</td>
+      <td>201.3889</td>
+      <td>NORMAL</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 55 columns</p>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Filas:    </span><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Columnas: </span><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filas:    220,320
+Columnas: 55
 </pre></div>
 </div>
 </div>
@@ -535,17 +697,83 @@ qué representa cada columna y dónde podría haber nulos.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.DataFrame&#39;&gt;
+RangeIndex: 220320 entries, 0 to 220319
+Data columns (total 55 columns):
+ #   Column          Non-Null Count   Dtype  
+---  ------          --------------   -----  
+ 0   Unnamed: 0      220320 non-null  int64  
+ 1   timestamp       220320 non-null  str    
+ 2   sensor_00       210112 non-null  float64
+ 3   sensor_01       219951 non-null  float64
+ 4   sensor_02       220301 non-null  float64
+ 5   sensor_03       220301 non-null  float64
+ 6   sensor_04       220301 non-null  float64
+ 7   sensor_05       220301 non-null  float64
+ 8   sensor_06       215522 non-null  float64
+ 9   sensor_07       214869 non-null  float64
+ 10  sensor_08       215213 non-null  float64
+ 11  sensor_09       215725 non-null  float64
+ 12  sensor_10       220301 non-null  float64
+ 13  sensor_11       220301 non-null  float64
+ 14  sensor_12       220301 non-null  float64
+ 15  sensor_13       220301 non-null  float64
+ 16  sensor_14       220299 non-null  float64
+ 17  sensor_15       0 non-null       float64
+ 18  sensor_16       220289 non-null  float64
+ 19  sensor_17       220274 non-null  float64
+ 20  sensor_18       220274 non-null  float64
+ 21  sensor_19       220304 non-null  float64
+ 22  sensor_20       220304 non-null  float64
+ 23  sensor_21       220304 non-null  float64
+ 24  sensor_22       220279 non-null  float64
+ 25  sensor_23       220304 non-null  float64
+ 26  sensor_24       220304 non-null  float64
+ 27  sensor_25       220284 non-null  float64
+ 28  sensor_26       220300 non-null  float64
+ 29  sensor_27       220304 non-null  float64
+ 30  sensor_28       220304 non-null  float64
+ 31  sensor_29       220248 non-null  float64
+ 32  sensor_30       220059 non-null  float64
+ 33  sensor_31       220304 non-null  float64
+ 34  sensor_32       220252 non-null  float64
+ 35  sensor_33       220304 non-null  float64
+ 36  sensor_34       220304 non-null  float64
+ 37  sensor_35       220304 non-null  float64
+ 38  sensor_36       220304 non-null  float64
+ 39  sensor_37       220304 non-null  float64
+ 40  sensor_38       220293 non-null  float64
+ 41  sensor_39       220293 non-null  float64
+ 42  sensor_40       220293 non-null  float64
+ 43  sensor_41       220293 non-null  float64
+ 44  sensor_42       220293 non-null  float64
+ 45  sensor_43       220293 non-null  float64
+ 46  sensor_44       220293 non-null  float64
+ 47  sensor_45       220293 non-null  float64
+ 48  sensor_46       220293 non-null  float64
+ 49  sensor_47       220293 non-null  float64
+ 50  sensor_48       220293 non-null  float64
+ 51  sensor_49       220293 non-null  float64
+ 52  sensor_50       143303 non-null  float64
+ 53  sensor_51       204937 non-null  float64
+ 54  machine_status  220320 non-null  str    
+dtypes: float64(52), int64(1), str(2)
+memory usage: 92.5 MB
+</pre></div>
+</div>
+</div>
 </div>
 <p>El dataset tiene <strong>220.320 registros</strong> y <strong>55 columnas</strong>: un índice heredado
 (<code class="docutils literal notranslate"><span class="pre">Unnamed:</span> <span class="pre">0</span></code>), la marca de tiempo (<code class="docutils literal notranslate"><span class="pre">timestamp</span></code>), <strong>52 sensores</strong> y la etiqueta
 <code class="docutils literal notranslate"><span class="pre">machine_status</span></code>.</p>
 </section>
 <section id="tipos-de-datos-diagnostico-transformacion-y-verificacion">
-<h2>3. Tipos de datos: diagnóstico, transformación y verificación<a class="headerlink" href="#tipos-de-datos-diagnostico-transformacion-y-verificacion" title="Permalink to this heading">#</a></h2>
+<h2>3. Tipos de datos: diagnóstico, transformación y verificación<a class="headerlink" href="#tipos-de-datos-diagnostico-transformacion-y-verificacion" title="Link to this heading">#</a></h2>
 <p>El curso insiste en <strong>revisar los tipos de datos, transformarlos según el análisis y volver
 a revisarlos</strong>. Lo hacemos en tres pasos.</p>
 <section id="tipos-de-datos-antes-de-transformar">
-<h3>3.1 Tipos de datos ANTES de transformar<a class="headerlink" href="#tipos-de-datos-antes-de-transformar" title="Permalink to this heading">#</a></h3>
+<h3>3.1 Tipos de datos ANTES de transformar<a class="headerlink" href="#tipos-de-datos-antes-de-transformar" title="Link to this heading">#</a></h3>
 <p><strong>Qué/Por qué:</strong> vemos cómo <code class="docutils literal notranslate"><span class="pre">pandas</span></code> infirió cada tipo al leer el CSV. Detectaremos
 columnas mal tipadas que conviene corregir.</p>
 <div class="cell docutils container">
@@ -554,6 +782,23 @@ columnas mal tipadas que conviene corregir.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Detalle de columnas no numéricas y la columna índice:&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;Unnamed: 0&quot;</span><span class="p">,</span> <span class="s2">&quot;timestamp&quot;</span><span class="p">,</span> <span class="s2">&quot;machine_status&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tipos de datos por columna (resumen):
+float64    52
+str         2
+int64       1
+Name: count, dtype: int64
+
+Detalle de columnas no numéricas y la columna índice:
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unnamed: 0        int64
+timestamp           str
+machine_status      str
+dtype: object
 </pre></div>
 </div>
 </div>
@@ -569,7 +814,7 @@ ordenables por severidad (<code class="docutils literal notranslate"><span class
 </ul>
 </section>
 <section id="transformacion-de-los-tipos-necesarios">
-<h3>3.2 Transformación de los tipos necesarios<a class="headerlink" href="#transformacion-de-los-tipos-necesarios" title="Permalink to this heading">#</a></h3>
+<h3>3.2 Transformación de los tipos necesarios<a class="headerlink" href="#transformacion-de-los-tipos-necesarios" title="Link to this heading">#</a></h3>
 <p><strong>Qué:</strong> convertimos <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> a <code class="docutils literal notranslate"><span class="pre">datetime</span></code> y <code class="docutils literal notranslate"><span class="pre">machine_status</span></code> a <code class="docutils literal notranslate"><span class="pre">category</span></code> ordenada.</p>
 <p><strong>Por qué:</strong> <code class="docutils literal notranslate"><span class="pre">datetime</span></code> habilita operaciones temporales (orden, remuestreo, interpolación
 por tiempo); <code class="docutils literal notranslate"><span class="pre">category</span></code> ahorra memoria y permite ordenar/segmentar correctamente por estado.</p>
@@ -586,14 +831,26 @@ por tiempo); <code class="docutils literal notranslate"><span class="pre">catego
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Transformación aplicada a &#39;timestamp&#39; y &#39;machine_status&#39;.
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="tipos-de-datos-despues-de-transformar">
-<h3>3.3 Tipos de datos DESPUÉS de transformar<a class="headerlink" href="#tipos-de-datos-despues-de-transformar" title="Permalink to this heading">#</a></h3>
+<h3>3.3 Tipos de datos DESPUÉS de transformar<a class="headerlink" href="#tipos-de-datos-despues-de-transformar" title="Link to this heading">#</a></h3>
 <p><strong>Qué/Por qué:</strong> confirmamos que las conversiones se aplicaron correctamente antes de seguir.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s2">&quot;timestamp&quot;</span><span class="p">,</span> <span class="s2">&quot;machine_status&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>timestamp         datetime64[us]
+machine_status          category
+dtype: object
 </pre></div>
 </div>
 </div>
@@ -608,6 +865,17 @@ por tiempo); <code class="docutils literal notranslate"><span class="pre">catego
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Inicio : 2018-04-01 00:00:00
+Fin    : 2018-08-31 23:59:00
+Periodo: 152 días
+Intervalo más frecuente:
+ timestamp
+0 days 00:01:00    220319
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
 </div>
 <p>La telemetría cubre <strong>del 1 abr al 31 ago 2018 (152 días)</strong> con muestreo <strong>regular de 1
 minuto</strong>: es una <strong>serie de tiempo equiespaciada</strong>, lo que condicionará el tratamiento de
@@ -615,7 +883,7 @@ nulos.</p>
 </section>
 </section>
 <section id="identificacion-de-valores-nulos-y-tratamiento-propuesto">
-<h2>4. Identificación de valores nulos y tratamiento propuesto<a class="headerlink" href="#identificacion-de-valores-nulos-y-tratamiento-propuesto" title="Permalink to this heading">#</a></h2>
+<h2>4. Identificación de valores nulos y tratamiento propuesto<a class="headerlink" href="#identificacion-de-valores-nulos-y-tratamiento-propuesto" title="Link to this heading">#</a></h2>
 <p>Conforme al <strong>Módulo 3</strong>, cuantificamos los faltantes en <strong>conteo</strong> y <strong>porcentaje</strong>. El
 conteo dimensiona el problema; el porcentaje guía la estrategia (regla práctica del curso:
 <em>eliminar</em> si ≤ 5 %, <em>imputar</em> si es mayor).</p>
@@ -631,22 +899,327 @@ conteo dimensiona el problema; el porcentaje guía la estrategia (regla práctic
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Columnas con nulos: 52 de 55
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Valores_Faltantes</th>
+      <th>Porcentaje_%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>sensor_15</th>
+      <td>220320</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <th>sensor_50</th>
+      <td>77017</td>
+      <td>34.96</td>
+    </tr>
+    <tr>
+      <th>sensor_51</th>
+      <td>15383</td>
+      <td>6.98</td>
+    </tr>
+    <tr>
+      <th>sensor_00</th>
+      <td>10208</td>
+      <td>4.63</td>
+    </tr>
+    <tr>
+      <th>sensor_07</th>
+      <td>5451</td>
+      <td>2.47</td>
+    </tr>
+    <tr>
+      <th>sensor_08</th>
+      <td>5107</td>
+      <td>2.32</td>
+    </tr>
+    <tr>
+      <th>sensor_06</th>
+      <td>4798</td>
+      <td>2.18</td>
+    </tr>
+    <tr>
+      <th>sensor_09</th>
+      <td>4595</td>
+      <td>2.09</td>
+    </tr>
+    <tr>
+      <th>sensor_01</th>
+      <td>369</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <th>sensor_30</th>
+      <td>261</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <th>sensor_29</th>
+      <td>72</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th>sensor_32</th>
+      <td>68</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th>sensor_18</th>
+      <td>46</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>sensor_25</th>
+      <td>36</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>sensor_22</th>
+      <td>41</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>sensor_17</th>
+      <td>46</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>sensor_11</th>
+      <td>19</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_02</th>
+      <td>19</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_03</th>
+      <td>19</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_04</th>
+      <td>19</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_19</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_16</th>
+      <td>31</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_13</th>
+      <td>19</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_14</th>
+      <td>21</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_12</th>
+      <td>19</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_05</th>
+      <td>19</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_10</th>
+      <td>19</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_23</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_27</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_26</th>
+      <td>20</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_24</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_28</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_31</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_33</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_21</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_20</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_35</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_34</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_36</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_37</th>
+      <td>16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_40</th>
+      <td>27</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_41</th>
+      <td>27</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_38</th>
+      <td>27</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_39</th>
+      <td>27</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_43</th>
+      <td>27</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_42</th>
+      <td>27</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_44</th>
+      <td>27</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_45</th>
+      <td>27</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_47</th>
+      <td>27</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_46</th>
+      <td>27</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_49</th>
+      <td>27</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>sensor_48</th>
+      <td>27</td>
+      <td>0.01</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">tabla_nulos</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;index&quot;</span><span class="p">:</span> <span class="s2">&quot;Columna&quot;</span><span class="p">}),</span>
-             <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Columna&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Porcentaje_%&quot;</span><span class="p">,</span>
-             <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Porcentaje de valores faltantes por columna&quot;</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_hline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">line_dash</span><span class="o">=</span><span class="s2">&quot;dash&quot;</span><span class="p">,</span> <span class="n">line_color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span>
-              <span class="n">annotation_text</span><span class="o">=</span><span class="s2">&quot;Umbral 5%&quot;</span><span class="p">,</span> <span class="n">annotation_position</span><span class="o">=</span><span class="s2">&quot;top left&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">plotly.express</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">px</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span>
+    <span class="n">tabla_nulos</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;index&quot;</span><span class="p">:</span> <span class="s2">&quot;Columna&quot;</span><span class="p">}),</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Columna&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Porcentaje_%&quot;</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Porcentaje de valores faltantes por columna&quot;</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">add_hline</span><span class="p">(</span>
+    <span class="n">y</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">line_dash</span><span class="o">=</span><span class="s2">&quot;dash&quot;</span><span class="p">,</span>
+    <span class="n">line_color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span>
+    <span class="n">annotation_text</span><span class="o">=</span><span class="s2">&quot;Umbral 5%&quot;</span><span class="p">,</span>
+    <span class="n">annotation_position</span><span class="o">=</span><span class="s2">&quot;top left&quot;</span>
+<span class="p">)</span>
+
 <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">xaxis_tickangle</span><span class="o">=-</span><span class="mi">60</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+
 <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+</div>
 </div>
 <section id="analisis-y-tratamiento-por-tipo-de-variable">
-<h3>Análisis y tratamiento (por tipo de variable)<a class="headerlink" href="#analisis-y-tratamiento-por-tipo-de-variable" title="Permalink to this heading">#</a></h3>
+<h3>Análisis y tratamiento (por tipo de variable)<a class="headerlink" href="#analisis-y-tratamiento-por-tipo-de-variable" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Caso</p></th>
@@ -683,7 +1256,7 @@ no requiere imputación por moda. El tratamiento se aplica en la sección 6.</p>
 </section>
 </section>
 <section id="identificacion-y-manejo-de-datos-duplicados">
-<h2>5. Identificación y manejo de datos duplicados<a class="headerlink" href="#identificacion-y-manejo-de-datos-duplicados" title="Permalink to this heading">#</a></h2>
+<h2>5. Identificación y manejo de datos duplicados<a class="headerlink" href="#identificacion-y-manejo-de-datos-duplicados" title="Link to this heading">#</a></h2>
 <p><strong>Qué:</strong> contamos filas completamente duplicadas y, por ser serie de tiempo, también
 <strong>marcas de tiempo repetidas</strong>.</p>
 <p><strong>Por qué:</strong> los duplicados sesgan frecuencias y estadísticas; un <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> repetido sería
@@ -694,6 +1267,12 @@ un error de registro.</p>
 <span class="n">dup_ts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;timestamp&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Filas completamente duplicadas : </span><span class="si">{</span><span class="n">dup_filas</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Marcas de tiempo duplicadas    : </span><span class="si">{</span><span class="n">dup_ts</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filas completamente duplicadas : 0
+Marcas de tiempo duplicadas    : 0
 </pre></div>
 </div>
 </div>
@@ -708,10 +1287,15 @@ documentada como buena práctica (no altera nada porque no hay duplicados).</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dimensiones tras verificación: (220320, 55)
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="limpieza-y-tratamiento-aplicado">
-<h2>6. Limpieza y tratamiento aplicado<a class="headerlink" href="#limpieza-y-tratamiento-aplicado" title="Permalink to this heading">#</a></h2>
+<h2>6. Limpieza y tratamiento aplicado<a class="headerlink" href="#limpieza-y-tratamiento-aplicado" title="Link to this heading">#</a></h2>
 <p>Aplicamos las decisiones anteriores: (1) eliminar <code class="docutils literal notranslate"><span class="pre">Unnamed:</span> <span class="pre">0</span></code> y <code class="docutils literal notranslate"><span class="pre">sensor_15</span></code>; (2) usar
 <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> como índice temporal; (3) imputar los sensores por interpolación temporal.
 <code class="docutils literal notranslate"><span class="pre">machine_status</span></code> ya quedó como categórica en la sección 3.</p>
@@ -730,6 +1314,12 @@ documentada como buena práctica (no altera nada porque no hay duplicados).</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Columnas eliminadas: [&#39;Unnamed: 0&#39;, &#39;sensor_15&#39;]
+Nuevas dimensiones: (220320, 52)
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -743,12 +1333,17 @@ documentada como buena práctica (no altera nada porque no hay duplicados).</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Nulos en sensores: 124,254 -&gt; 0
+</pre></div>
+</div>
+</div>
 </div>
 <p>El dataset queda <strong>limpio y completo</strong> (<code class="docutils literal notranslate"><span class="pre">df_clean</span></code>), con 51 sensores numéricos sin
 nulos y la cadencia de 1 minuto intacta.</p>
 </section>
 <section id="estadisticas-descriptivas-modulo-2">
-<h2>7. Estadísticas descriptivas (Módulo 2)<a class="headerlink" href="#estadisticas-descriptivas-modulo-2" title="Permalink to this heading">#</a></h2>
+<h2>7. Estadísticas descriptivas (Módulo 2)<a class="headerlink" href="#estadisticas-descriptivas-modulo-2" title="Link to this heading">#</a></h2>
 <p>Resumimos con <code class="docutils literal notranslate"><span class="pre">describe()</span></code> y luego construimos un cuadro completo de medidas (tendencia
 central, dispersión, posición, asimetría, curtosis) para un sensor representativo, más una
 comparación por estado de la máquina (descriptivo bivariado categórica vs. numérica).</p>
@@ -758,21 +1353,592 @@ comparación por estado de la máquina (descriptivo bivariado categórica vs. nu
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>sensor_00</th>
+      <td>2.27</td>
+      <td>0.60</td>
+      <td>0.00</td>
+      <td>2.42</td>
+      <td>2.46</td>
+      <td>2.50</td>
+      <td>2.55</td>
+    </tr>
+    <tr>
+      <th>sensor_01</th>
+      <td>47.60</td>
+      <td>3.30</td>
+      <td>0.00</td>
+      <td>46.31</td>
+      <td>48.13</td>
+      <td>49.48</td>
+      <td>56.73</td>
+    </tr>
+    <tr>
+      <th>sensor_02</th>
+      <td>50.87</td>
+      <td>3.67</td>
+      <td>33.16</td>
+      <td>50.39</td>
+      <td>51.65</td>
+      <td>52.78</td>
+      <td>56.03</td>
+    </tr>
+    <tr>
+      <th>sensor_03</th>
+      <td>43.75</td>
+      <td>2.42</td>
+      <td>31.64</td>
+      <td>42.84</td>
+      <td>44.23</td>
+      <td>45.31</td>
+      <td>48.22</td>
+    </tr>
+    <tr>
+      <th>sensor_04</th>
+      <td>590.66</td>
+      <td>144.04</td>
+      <td>2.80</td>
+      <td>626.62</td>
+      <td>632.64</td>
+      <td>637.62</td>
+      <td>800.00</td>
+    </tr>
+    <tr>
+      <th>sensor_05</th>
+      <td>73.39</td>
+      <td>17.30</td>
+      <td>0.00</td>
+      <td>69.98</td>
+      <td>75.58</td>
+      <td>80.91</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <th>sensor_06</th>
+      <td>13.21</td>
+      <td>2.90</td>
+      <td>0.01</td>
+      <td>13.32</td>
+      <td>13.63</td>
+      <td>14.54</td>
+      <td>22.25</td>
+    </tr>
+    <tr>
+      <th>sensor_07</th>
+      <td>15.48</td>
+      <td>3.20</td>
+      <td>0.00</td>
+      <td>15.86</td>
+      <td>16.17</td>
+      <td>16.43</td>
+      <td>23.60</td>
+    </tr>
+    <tr>
+      <th>sensor_08</th>
+      <td>14.86</td>
+      <td>3.00</td>
+      <td>0.03</td>
+      <td>15.15</td>
+      <td>15.45</td>
+      <td>15.70</td>
+      <td>24.35</td>
+    </tr>
+    <tr>
+      <th>sensor_09</th>
+      <td>14.49</td>
+      <td>2.96</td>
+      <td>0.00</td>
+      <td>15.01</td>
+      <td>15.08</td>
+      <td>15.12</td>
+      <td>25.00</td>
+    </tr>
+    <tr>
+      <th>sensor_10</th>
+      <td>41.47</td>
+      <td>12.09</td>
+      <td>0.00</td>
+      <td>40.70</td>
+      <td>44.29</td>
+      <td>47.46</td>
+      <td>76.11</td>
+    </tr>
+    <tr>
+      <th>sensor_11</th>
+      <td>41.92</td>
+      <td>13.06</td>
+      <td>0.00</td>
+      <td>38.86</td>
+      <td>45.36</td>
+      <td>49.66</td>
+      <td>60.00</td>
+    </tr>
+    <tr>
+      <th>sensor_12</th>
+      <td>29.14</td>
+      <td>10.11</td>
+      <td>0.00</td>
+      <td>28.68</td>
+      <td>32.52</td>
+      <td>34.94</td>
+      <td>45.00</td>
+    </tr>
+    <tr>
+      <th>sensor_13</th>
+      <td>7.08</td>
+      <td>6.90</td>
+      <td>0.00</td>
+      <td>1.54</td>
+      <td>2.93</td>
+      <td>12.86</td>
+      <td>31.19</td>
+    </tr>
+    <tr>
+      <th>sensor_14</th>
+      <td>376.85</td>
+      <td>113.22</td>
+      <td>32.41</td>
+      <td>418.10</td>
+      <td>420.11</td>
+      <td>421.00</td>
+      <td>500.00</td>
+    </tr>
+    <tr>
+      <th>sensor_16</th>
+      <td>416.45</td>
+      <td>126.11</td>
+      <td>0.00</td>
+      <td>459.45</td>
+      <td>462.86</td>
+      <td>464.30</td>
+      <td>739.74</td>
+    </tr>
+    <tr>
+      <th>sensor_17</th>
+      <td>421.07</td>
+      <td>129.24</td>
+      <td>0.00</td>
+      <td>454.13</td>
+      <td>462.02</td>
+      <td>466.86</td>
+      <td>600.00</td>
+    </tr>
+    <tr>
+      <th>sensor_18</th>
+      <td>2.30</td>
+      <td>0.77</td>
+      <td>0.00</td>
+      <td>2.45</td>
+      <td>2.53</td>
+      <td>2.59</td>
+      <td>4.87</td>
+    </tr>
+    <tr>
+      <th>sensor_19</th>
+      <td>590.83</td>
+      <td>199.35</td>
+      <td>0.00</td>
+      <td>662.77</td>
+      <td>665.67</td>
+      <td>667.15</td>
+      <td>878.92</td>
+    </tr>
+    <tr>
+      <th>sensor_20</th>
+      <td>360.80</td>
+      <td>101.97</td>
+      <td>0.00</td>
+      <td>398.02</td>
+      <td>399.37</td>
+      <td>400.09</td>
+      <td>448.91</td>
+    </tr>
+    <tr>
+      <th>sensor_21</th>
+      <td>796.23</td>
+      <td>226.68</td>
+      <td>95.53</td>
+      <td>875.46</td>
+      <td>879.70</td>
+      <td>882.13</td>
+      <td>1107.53</td>
+    </tr>
+    <tr>
+      <th>sensor_22</th>
+      <td>459.74</td>
+      <td>154.59</td>
+      <td>0.00</td>
+      <td>478.95</td>
+      <td>531.85</td>
+      <td>534.25</td>
+      <td>594.06</td>
+    </tr>
+    <tr>
+      <th>sensor_23</th>
+      <td>922.61</td>
+      <td>291.84</td>
+      <td>0.00</td>
+      <td>950.92</td>
+      <td>981.92</td>
+      <td>1090.81</td>
+      <td>1227.56</td>
+    </tr>
+    <tr>
+      <th>sensor_24</th>
+      <td>556.23</td>
+      <td>182.30</td>
+      <td>0.00</td>
+      <td>601.15</td>
+      <td>625.87</td>
+      <td>628.61</td>
+      <td>1000.00</td>
+    </tr>
+    <tr>
+      <th>sensor_25</th>
+      <td>649.09</td>
+      <td>220.93</td>
+      <td>0.00</td>
+      <td>693.94</td>
+      <td>740.20</td>
+      <td>750.36</td>
+      <td>839.58</td>
+    </tr>
+    <tr>
+      <th>sensor_26</th>
+      <td>786.40</td>
+      <td>246.68</td>
+      <td>43.15</td>
+      <td>790.49</td>
+      <td>861.86</td>
+      <td>919.10</td>
+      <td>1214.42</td>
+    </tr>
+    <tr>
+      <th>sensor_27</th>
+      <td>501.50</td>
+      <td>169.82</td>
+      <td>0.00</td>
+      <td>448.30</td>
+      <td>494.47</td>
+      <td>536.27</td>
+      <td>2000.00</td>
+    </tr>
+    <tr>
+      <th>sensor_28</th>
+      <td>851.69</td>
+      <td>313.07</td>
+      <td>4.32</td>
+      <td>782.68</td>
+      <td>967.27</td>
+      <td>1043.98</td>
+      <td>1841.15</td>
+    </tr>
+    <tr>
+      <th>sensor_29</th>
+      <td>576.09</td>
+      <td>225.85</td>
+      <td>0.64</td>
+      <td>518.88</td>
+      <td>564.85</td>
+      <td>743.98</td>
+      <td>1466.28</td>
+    </tr>
+    <tr>
+      <th>sensor_30</th>
+      <td>613.97</td>
+      <td>196.51</td>
+      <td>0.00</td>
+      <td>627.78</td>
+      <td>668.98</td>
+      <td>697.22</td>
+      <td>1600.00</td>
+    </tr>
+    <tr>
+      <th>sensor_31</th>
+      <td>863.33</td>
+      <td>283.54</td>
+      <td>23.96</td>
+      <td>839.06</td>
+      <td>917.71</td>
+      <td>981.25</td>
+      <td>1800.00</td>
+    </tr>
+    <tr>
+      <th>sensor_32</th>
+      <td>804.20</td>
+      <td>260.68</td>
+      <td>0.24</td>
+      <td>760.52</td>
+      <td>878.82</td>
+      <td>943.86</td>
+      <td>1839.21</td>
+    </tr>
+    <tr>
+      <th>sensor_33</th>
+      <td>486.41</td>
+      <td>150.75</td>
+      <td>6.46</td>
+      <td>489.76</td>
+      <td>512.27</td>
+      <td>555.16</td>
+      <td>1578.60</td>
+    </tr>
+    <tr>
+      <th>sensor_34</th>
+      <td>234.97</td>
+      <td>88.38</td>
+      <td>54.88</td>
+      <td>172.49</td>
+      <td>226.35</td>
+      <td>316.85</td>
+      <td>425.55</td>
+    </tr>
+    <tr>
+      <th>sensor_35</th>
+      <td>427.13</td>
+      <td>141.77</td>
+      <td>0.00</td>
+      <td>353.17</td>
+      <td>473.35</td>
+      <td>528.89</td>
+      <td>694.48</td>
+    </tr>
+    <tr>
+      <th>sensor_36</th>
+      <td>593.02</td>
+      <td>289.39</td>
+      <td>2.26</td>
+      <td>288.52</td>
+      <td>709.66</td>
+      <td>837.34</td>
+      <td>984.06</td>
+    </tr>
+    <tr>
+      <th>sensor_37</th>
+      <td>60.79</td>
+      <td>37.60</td>
+      <td>0.00</td>
+      <td>28.80</td>
+      <td>64.30</td>
+      <td>90.82</td>
+      <td>174.90</td>
+    </tr>
+    <tr>
+      <th>sensor_38</th>
+      <td>49.66</td>
+      <td>10.54</td>
+      <td>24.48</td>
+      <td>45.57</td>
+      <td>49.48</td>
+      <td>53.65</td>
+      <td>417.71</td>
+    </tr>
+    <tr>
+      <th>sensor_39</th>
+      <td>36.61</td>
+      <td>15.61</td>
+      <td>19.27</td>
+      <td>32.55</td>
+      <td>35.42</td>
+      <td>39.06</td>
+      <td>547.92</td>
+    </tr>
+    <tr>
+      <th>sensor_40</th>
+      <td>68.84</td>
+      <td>21.37</td>
+      <td>23.44</td>
+      <td>57.81</td>
+      <td>66.41</td>
+      <td>77.86</td>
+      <td>512.76</td>
+    </tr>
+    <tr>
+      <th>sensor_41</th>
+      <td>35.36</td>
+      <td>7.90</td>
+      <td>20.83</td>
+      <td>32.55</td>
+      <td>34.90</td>
+      <td>37.76</td>
+      <td>420.31</td>
+    </tr>
+    <tr>
+      <th>sensor_42</th>
+      <td>35.45</td>
+      <td>10.26</td>
+      <td>22.14</td>
+      <td>32.81</td>
+      <td>35.16</td>
+      <td>36.98</td>
+      <td>374.22</td>
+    </tr>
+    <tr>
+      <th>sensor_43</th>
+      <td>43.88</td>
+      <td>11.04</td>
+      <td>24.48</td>
+      <td>39.58</td>
+      <td>42.97</td>
+      <td>46.61</td>
+      <td>408.59</td>
+    </tr>
+    <tr>
+      <th>sensor_44</th>
+      <td>42.66</td>
+      <td>11.58</td>
+      <td>25.75</td>
+      <td>36.75</td>
+      <td>40.51</td>
+      <td>45.14</td>
+      <td>1000.00</td>
+    </tr>
+    <tr>
+      <th>sensor_45</th>
+      <td>43.09</td>
+      <td>12.84</td>
+      <td>26.33</td>
+      <td>36.75</td>
+      <td>40.22</td>
+      <td>44.85</td>
+      <td>320.31</td>
+    </tr>
+    <tr>
+      <th>sensor_46</th>
+      <td>48.02</td>
+      <td>15.64</td>
+      <td>26.33</td>
+      <td>40.51</td>
+      <td>44.85</td>
+      <td>51.22</td>
+      <td>370.37</td>
+    </tr>
+    <tr>
+      <th>sensor_47</th>
+      <td>44.34</td>
+      <td>10.44</td>
+      <td>27.20</td>
+      <td>39.06</td>
+      <td>42.25</td>
+      <td>46.59</td>
+      <td>303.53</td>
+    </tr>
+    <tr>
+      <th>sensor_48</th>
+      <td>150.89</td>
+      <td>82.24</td>
+      <td>26.33</td>
+      <td>83.91</td>
+      <td>138.02</td>
+      <td>208.33</td>
+      <td>561.63</td>
+    </tr>
+    <tr>
+      <th>sensor_49</th>
+      <td>57.12</td>
+      <td>19.14</td>
+      <td>26.62</td>
+      <td>47.74</td>
+      <td>52.66</td>
+      <td>60.76</td>
+      <td>464.41</td>
+    </tr>
+    <tr>
+      <th>sensor_50</th>
+      <td>468.55</td>
+      <td>393.07</td>
+      <td>27.49</td>
+      <td>182.58</td>
+      <td>222.51</td>
+      <td>1000.00</td>
+      <td>1000.00</td>
+    </tr>
+    <tr>
+      <th>sensor_51</th>
+      <td>258.27</td>
+      <td>228.89</td>
+      <td>27.78</td>
+      <td>180.56</td>
+      <td>199.94</td>
+      <td>223.09</td>
+      <td>1000.00</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">col</span> <span class="o">=</span> <span class="s2">&quot;sensor_04&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">skew</span><span class="p">,</span> <span class="n">kurtosis</span>
+
+<span class="n">col</span> <span class="o">=</span> <span class="s2">&quot;sensor_04&quot;</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">df_clean</span><span class="p">[</span><span class="n">col</span><span class="p">]</span>
+
 <span class="n">estadisticos</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">({</span>
-    <span class="s2">&quot;Media&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="s2">&quot;Desv. estándar&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">std</span><span class="p">(),</span>
-    <span class="s2">&quot;Coef. variación (%)&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="o">/</span><span class="n">s</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span>
-    <span class="s2">&quot;Mínimo&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="s2">&quot;Q1 (25%)&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">.25</span><span class="p">),</span> <span class="s2">&quot;Mediana (Q2)&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
-    <span class="s2">&quot;Q3 (75%)&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">.75</span><span class="p">),</span> <span class="s2">&quot;Máximo&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span>
-    <span class="s2">&quot;IQR&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">.75</span><span class="p">)</span><span class="o">-</span><span class="n">s</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">.25</span><span class="p">),</span>
-    <span class="s2">&quot;Asimetría (skew)&quot;</span><span class="p">:</span> <span class="n">skew</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="s2">&quot;Curtosis (exceso)&quot;</span><span class="p">:</span> <span class="n">kurtosis</span><span class="p">(</span><span class="n">s</span><span class="p">),</span>
+    <span class="s2">&quot;Media&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span>
+    <span class="s2">&quot;Desv. estándar&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">std</span><span class="p">(),</span>
+    <span class="s2">&quot;Coef. variación (%)&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">/</span> <span class="n">s</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span>
+    <span class="s2">&quot;Mínimo&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span>
+    <span class="s2">&quot;Q1 (25%)&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">.25</span><span class="p">),</span>
+    <span class="s2">&quot;Mediana (Q2)&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span>
+    <span class="s2">&quot;Q3 (75%)&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">.75</span><span class="p">),</span>
+    <span class="s2">&quot;Máximo&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span>
+    <span class="s2">&quot;IQR&quot;</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">.75</span><span class="p">)</span> <span class="o">-</span> <span class="n">s</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">.25</span><span class="p">),</span>
+    <span class="s2">&quot;Asimetría (skew)&quot;</span><span class="p">:</span> <span class="n">skew</span><span class="p">(</span><span class="n">s</span><span class="p">),</span>
+    <span class="s2">&quot;Curtosis (exceso)&quot;</span><span class="p">:</span> <span class="n">kurtosis</span><span class="p">(</span><span class="n">s</span><span class="p">),</span>
 <span class="p">})</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Medidas descriptivas — </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="n">estadisticos</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Medidas descriptivas — sensor_04
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Media                  590.664
+Desv. estándar         144.042
+Coef. variación (%)     24.386
+Mínimo                   2.798
+Q1 (25%)               626.620
+Mediana (Q2)           632.639
+Q3 (75%)               637.616
+Máximo                 800.000
+IQR                     10.995
+Asimetría (skew)        -3.368
+Curtosis (exceso)        9.952
+dtype: float64
 </pre></div>
 </div>
 </div>
@@ -785,17 +1951,83 @@ comparación por estado de la máquina (descriptivo bivariado categórica vs. nu
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Promedio</th>
+      <th>Desv_Estandar</th>
+      <th>Minimo</th>
+      <th>Mediana</th>
+      <th>Maximo</th>
+    </tr>
+    <tr>
+      <th>machine_status</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>NORMAL</th>
+      <td>625.67</td>
+      <td>50.82</td>
+      <td>2.80</td>
+      <td>633.33</td>
+      <td>800.00</td>
+    </tr>
+    <tr>
+      <th>RECOVERING</th>
+      <td>93.02</td>
+      <td>117.95</td>
+      <td>2.80</td>
+      <td>3.57</td>
+      <td>611.69</td>
+    </tr>
+    <tr>
+      <th>BROKEN</th>
+      <td>334.67</td>
+      <td>173.96</td>
+      <td>200.12</td>
+      <td>206.04</td>
+      <td>612.15</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 </section>
 <section id="analisis-de-distribuciones-modulo-2">
-<h2>8. Análisis de distribuciones (Módulo 2)<a class="headerlink" href="#analisis-de-distribuciones-modulo-2" title="Permalink to this heading">#</a></h2>
+<h2>8. Análisis de distribuciones (Módulo 2)<a class="headerlink" href="#analisis-de-distribuciones-modulo-2" title="Link to this heading">#</a></h2>
 <p><strong>Qué:</strong> histogramas + densidad de varios sensores y una <strong>prueba de normalidad de
 Shapiro–Wilk</strong> sobre una muestra.</p>
 <p><strong>Por qué:</strong> verificar simetría y colas pesadas orienta transformaciones y el tipo de prueba
 (paramétrica vs. no paramétrica) válida más adelante.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">muestra</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;sensor_00&quot;</span><span class="p">,</span><span class="s2">&quot;sensor_04&quot;</span><span class="p">,</span><span class="s2">&quot;sensor_11&quot;</span><span class="p">,</span><span class="s2">&quot;sensor_50&quot;</span><span class="p">,</span><span class="s2">&quot;sensor_51&quot;</span><span class="p">,</span><span class="s2">&quot;sensor_38&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">skew</span><span class="p">,</span> <span class="n">kurtosis</span>
+
+<span class="n">muestra</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;sensor_00&quot;</span><span class="p">,</span><span class="s2">&quot;sensor_04&quot;</span><span class="p">,</span><span class="s2">&quot;sensor_11&quot;</span><span class="p">,</span><span class="s2">&quot;sensor_50&quot;</span><span class="p">,</span><span class="s2">&quot;sensor_51&quot;</span><span class="p">,</span><span class="s2">&quot;sensor_38&quot;</span><span class="p">]</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 <span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="o">.</span><span class="n">ravel</span><span class="p">(),</span> <span class="n">muestra</span><span class="p">):</span>
     <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df_clean</span><span class="p">[</span><span class="n">c</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;steelblue&quot;</span><span class="p">)</span>
@@ -806,13 +2038,23 @@ Shapiro–Wilk</strong> sobre una muestra.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/59885e96c08a6cce59600810248a596f7820883a018da6857aad46a6d7b75bcc.png" src="_images/59885e96c08a6cce59600810248a596f7820883a018da6857aad46a6d7b75bcc.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">df_clean</span><span class="p">[</span><span class="s2">&quot;sensor_04&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">shapiro</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">df_clean</span><span class="p">[</span><span class="s2">&quot;sensor_04&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">stat</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">shapiro</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Shapiro-Wilk sensor_04: estadístico=</span><span class="si">{</span><span class="n">stat</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">, p-valor=</span><span class="si">{</span><span class="n">p</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Conclusión:&quot;</span><span class="p">,</span> <span class="s2">&quot;No normal (se rechaza H0)&quot;</span> <span class="k">if</span> <span class="n">p</span> <span class="o">&lt;</span> <span class="mf">0.05</span> <span class="k">else</span> <span class="s2">&quot;Compatible con normal&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shapiro-Wilk sensor_04: estadístico=0.3602, p-valor=1.43e-85
+Conclusión: No normal (se rechaza H0)
 </pre></div>
 </div>
 </div>
@@ -822,11 +2064,11 @@ rechaza la normalidad), comportamiento típico de señales físicas con regímen
 distintos.</p>
 </section>
 <section id="visualizaciones-para-identificar-patrones-y-anomalias-modulo-3">
-<h2>9. Visualizaciones para identificar patrones y anomalías (Módulo 3)<a class="headerlink" href="#visualizaciones-para-identificar-patrones-y-anomalias-modulo-3" title="Permalink to this heading">#</a></h2>
+<h2>9. Visualizaciones para identificar patrones y anomalías (Módulo 3)<a class="headerlink" href="#visualizaciones-para-identificar-patrones-y-anomalias-modulo-3" title="Link to this heading">#</a></h2>
 <p>Usamos <strong>Plotly</strong> para descubrir la estructura de los datos y el comportamiento alrededor de
 las fallas.</p>
 <section id="distribucion-de-la-variable-objetivo-machine-status">
-<h3>9.1 Distribución de la variable objetivo <code class="docutils literal notranslate"><span class="pre">machine_status</span></code><a class="headerlink" href="#distribucion-de-la-variable-objetivo-machine-status" title="Permalink to this heading">#</a></h3>
+<h3>9.1 Distribución de la variable objetivo <code class="docutils literal notranslate"><span class="pre">machine_status</span></code><a class="headerlink" href="#distribucion-de-la-variable-objetivo-machine-status" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conteo</span> <span class="o">=</span> <span class="n">df_clean</span><span class="p">[</span><span class="s2">&quot;machine_status&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -841,15 +2083,62 @@ las fallas.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>machine_status</th>
+      <th>conteo</th>
+      <th>porcentaje</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>NORMAL</td>
+      <td>205836</td>
+      <td>93.426</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RECOVERING</td>
+      <td>14477</td>
+      <td>6.571</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>BROKEN</td>
+      <td>7</td>
+      <td>0.003</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <p><strong>Hallazgo:</strong> desbalance fuerte —<code class="docutils literal notranslate"><span class="pre">NORMAL</span></code> ≈ 93,4 %, <code class="docutils literal notranslate"><span class="pre">RECOVERING</span></code> ≈ 6,6 % y solo <strong>7
 registros <code class="docutils literal notranslate"><span class="pre">BROKEN</span></code></strong> en cinco meses. Esto será clave para el modelado.</p>
 </section>
 <section id="eventos-de-falla-en-el-tiempo">
-<h3>9.2 Eventos de falla en el tiempo<a class="headerlink" href="#eventos-de-falla-en-el-tiempo" title="Permalink to this heading">#</a></h3>
+<h3>9.2 Eventos de falla en el tiempo<a class="headerlink" href="#eventos-de-falla-en-el-tiempo" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fallas</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">df_clean</span><span class="p">[</span><span class="s2">&quot;machine_status&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;BROKEN&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+<span class="n">fallas</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">df_clean</span><span class="p">[</span><span class="s2">&quot;machine_status&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;BROKEN&quot;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Instantes de falla (BROKEN):&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">fallas</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  -&quot;</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
 
@@ -865,12 +2154,24 @@ registros <code class="docutils literal notranslate"><span class="pre">BROKEN</s
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Instantes de falla (BROKEN):
+  - 2018-04-12 21:55:00
+  - 2018-04-18 00:30:00
+  - 2018-05-19 03:18:00
+  - 2018-05-25 00:30:00
+  - 2018-06-28 22:00:00
+  - 2018-07-08 00:11:00
+  - 2018-07-25 14:00:00
+</pre></div>
+</div>
+</div>
 </div>
 <p>Las fallas coinciden con <strong>caídas/saltos abruptos</strong> del sensor: el problema es
 <strong>predecible</strong> a partir de la telemetría.</p>
 </section>
 <section id="matriz-de-correlacion-entre-sensores">
-<h3>9.3 Matriz de correlación entre sensores<a class="headerlink" href="#matriz-de-correlacion-entre-sensores" title="Permalink to this heading">#</a></h3>
+<h3>9.3 Matriz de correlación entre sensores<a class="headerlink" href="#matriz-de-correlacion-entre-sensores" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">corr</span> <span class="o">=</span> <span class="n">df_clean</span><span class="p">[</span><span class="n">sensores</span><span class="p">]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
@@ -885,6 +2186,11 @@ registros <code class="docutils literal notranslate"><span class="pre">BROKEN</s
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pares de sensores con |r| &gt; 0.9: 68
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>65 pares</strong> con |r| &gt; 0,9: alta <strong>redundancia/multicolinealidad</strong>. Modelos basados en
 árboles (Random Forest) toleran bien esto; para modelos lineales convendría
@@ -892,11 +2198,11 @@ selección de variables o PCA.</p>
 </section>
 </section>
 <section id="machine-learning-clasificacion-del-estado-de-la-maquina-modulo-5">
-<h2>10. Machine Learning — Clasificación del estado de la máquina (Módulo 5)<a class="headerlink" href="#machine-learning-clasificacion-del-estado-de-la-maquina-modulo-5" title="Permalink to this heading">#</a></h2>
+<h2>10. Machine Learning — Clasificación del estado de la máquina (Módulo 5)<a class="headerlink" href="#machine-learning-clasificacion-del-estado-de-la-maquina-modulo-5" title="Link to this heading">#</a></h2>
 <p>Construiremos y compararemos varios modelos de <strong>clasificación supervisada</strong> y
 seleccionaremos el mejor, siguiendo el Módulo 5.</p>
 <section id="definicion-del-problema-y-de-la-variable-objetivo">
-<h3>10.1 Definición del problema y de la variable objetivo<a class="headerlink" href="#definicion-del-problema-y-de-la-variable-objetivo" title="Permalink to this heading">#</a></h3>
+<h3>10.1 Definición del problema y de la variable objetivo<a class="headerlink" href="#definicion-del-problema-y-de-la-variable-objetivo" title="Link to this heading">#</a></h3>
 <p><strong>Qué:</strong> definimos un objetivo <strong>binario</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code> = estado <strong>anómalo</strong> (<code class="docutils literal notranslate"><span class="pre">RECOVERING</span></code> o
 <code class="docutils literal notranslate"><span class="pre">BROKEN</span></code>) y <code class="docutils literal notranslate"><span class="pre">0</span></code> = <code class="docutils literal notranslate"><span class="pre">NORMAL</span></code>.</p>
 <p><strong>Por qué:</strong> la clase <code class="docutils literal notranslate"><span class="pre">BROKEN</span></code> tiene solo 7 registros, insuficiente para aprender por sí
@@ -918,10 +2224,20 @@ variables predictoras.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Balance de clases (0=NORMAL, 1=anómalo):
+machine_status
+0    205836
+1     14484
+Name: count, dtype: int64
+% anómalo: 6.57%
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="preparacion-submuestreo-particion-y-escalado">
-<h3>10.2 Preparación: submuestreo, partición y escalado<a class="headerlink" href="#preparacion-submuestreo-particion-y-escalado" title="Permalink to this heading">#</a></h3>
+<h3>10.2 Preparación: submuestreo, partición y escalado<a class="headerlink" href="#preparacion-submuestreo-particion-y-escalado" title="Link to this heading">#</a></h3>
 <p><strong>Qué:</strong> tomamos un <strong>submuestreo estratificado</strong> de 60.000 registros (conserva la
 proporción de clases), partimos en <strong>entrenamiento (70 %) y prueba (30 %)</strong> de forma
 estratificada y <strong>estandarizamos</strong> las variables (ajustando el escalador solo con
@@ -954,10 +2270,15 @@ aún más conservadora.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Entrenamiento: (42000, 51) | Prueba: (18000, 51)
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="entrenamiento-y-comparacion-de-modelos">
-<h3>10.3 Entrenamiento y comparación de modelos<a class="headerlink" href="#entrenamiento-y-comparacion-de-modelos" title="Permalink to this heading">#</a></h3>
+<h3>10.3 Entrenamiento y comparación de modelos<a class="headerlink" href="#entrenamiento-y-comparacion-de-modelos" title="Link to this heading">#</a></h3>
 <p><strong>Qué:</strong> entrenamos seis modelos de clasificación del Módulo 5 —<strong>Regresión Logística,
 Árbol de Decisión, Random Forest, KNN, Naive Bayes y XGBoost</strong>— y los evaluamos con
 <strong>Accuracy, Precision, Recall, F1 y ROC-AUC</strong>.</p>
@@ -978,6 +2299,8 @@ librería no estuviera instalada (está incluida en <code class="docutils litera
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.naive_bayes</span><span class="w"> </span><span class="kn">import</span> <span class="n">GaussianNB</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span><span class="n">accuracy_score</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span>
                              <span class="n">f1_score</span><span class="p">,</span> <span class="n">roc_auc_score</span><span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
 <span class="c1"># (modelo, requiere_escalado)</span>
 <span class="n">modelos</span> <span class="o">=</span> <span class="p">{</span>
@@ -1032,10 +2355,98 @@ librería no estuviera instalada (está incluida en <code class="docutils litera
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>XGBoost disponible: incluido en la comparación.
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Modelo</th>
+      <th>Accuracy</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1</th>
+      <th>ROC_AUC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>XGBoost</td>
+      <td>0.9997</td>
+      <td>0.9992</td>
+      <td>0.9966</td>
+      <td>0.9979</td>
+      <td>1.0000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Random Forest</td>
+      <td>0.9995</td>
+      <td>0.9949</td>
+      <td>0.9975</td>
+      <td>0.9962</td>
+      <td>1.0000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>KNN</td>
+      <td>0.9986</td>
+      <td>0.9923</td>
+      <td>0.9856</td>
+      <td>0.9890</td>
+      <td>0.9996</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Árbol de Decisión</td>
+      <td>0.9980</td>
+      <td>0.9767</td>
+      <td>0.9932</td>
+      <td>0.9849</td>
+      <td>0.9958</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Regresión Logística</td>
+      <td>0.9962</td>
+      <td>0.9463</td>
+      <td>0.9983</td>
+      <td>0.9716</td>
+      <td>0.9996</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Naive Bayes</td>
+      <td>0.9887</td>
+      <td>0.8607</td>
+      <td>0.9873</td>
+      <td>0.9197</td>
+      <td>0.9941</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 </section>
 <section id="visualizacion-comparativa-y-seleccion-del-mejor-modelo">
-<h3>10.4 Visualización comparativa y selección del mejor modelo<a class="headerlink" href="#visualizacion-comparativa-y-seleccion-del-mejor-modelo" title="Permalink to this heading">#</a></h3>
+<h3>10.4 Visualización comparativa y selección del mejor modelo<a class="headerlink" href="#visualizacion-comparativa-y-seleccion-del-mejor-modelo" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">tabla</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">&quot;Modelo&quot;</span><span class="p">,</span>
@@ -1050,10 +2461,15 @@ librería no estuviera instalada (está incluida en <code class="docutils litera
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mejor modelo por F1: XGBoost
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="evaluacion-detallada-del-mejor-modelo">
-<h3>10.5 Evaluación detallada del mejor modelo<a class="headerlink" href="#evaluacion-detallada-del-mejor-modelo" title="Permalink to this heading">#</a></h3>
+<h3>10.5 Evaluación detallada del mejor modelo<a class="headerlink" href="#evaluacion-detallada-del-mejor-modelo" title="Link to this heading">#</a></h3>
 <p><strong>Qué:</strong> para el modelo ganador mostramos la <strong>matriz de confusión</strong>, el <strong>reporte de
 clasificación</strong> y la <strong>curva ROC</strong>.</p>
 <p><strong>Por qué:</strong> la matriz de confusión revela qué tipo de error comete (falsos negativos =
@@ -1078,6 +2494,19 @@ discriminante.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/800021ac16b1be28e2ce47a46b8351a2e5e0bedb45ec07da2b18a0846d2992b8.png" src="_images/800021ac16b1be28e2ce47a46b8351a2e5e0bedb45ec07da2b18a0846d2992b8.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
+
+      NORMAL       1.00      1.00      1.00     16817
+     Anómalo       1.00      1.00      1.00      1183
+
+    accuracy                           1.00     18000
+   macro avg       1.00      1.00      1.00     18000
+weighted avg       1.00      1.00      1.00     18000
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1097,10 +2526,12 @@ discriminante.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+</div>
 </div>
 </section>
 <section id="importancia-de-variables-random-forest">
-<h3>10.6 Importancia de variables (Random Forest)<a class="headerlink" href="#importancia-de-variables-random-forest" title="Permalink to this heading">#</a></h3>
+<h3>10.6 Importancia de variables (Random Forest)<a class="headerlink" href="#importancia-de-variables-random-forest" title="Link to this heading">#</a></h3>
 <p><strong>Qué/Por qué:</strong> si el ganador es un modelo de árboles, su <strong>importancia de variables</strong>
 indica qué sensores son más informativos para detectar la anomalía —útil para priorizar
 instrumentación y para el dashboard.</p>
@@ -1118,11 +2549,13 @@ instrumentación y para el dashboard.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+</div>
 </div>
 </section>
 </section>
 <section id="optimizacion-de-hiperparametros-de-xgboost-gridsearch-validacion-cruzada">
-<h2>10.7 Optimización de hiperparámetros de XGBoost (GridSearch + validación cruzada)<a class="headerlink" href="#optimizacion-de-hiperparametros-de-xgboost-gridsearch-validacion-cruzada" title="Permalink to this heading">#</a></h2>
+<h2>10.7 Optimización de hiperparámetros de XGBoost (GridSearch + validación cruzada)<a class="headerlink" href="#optimizacion-de-hiperparametros-de-xgboost-gridsearch-validacion-cruzada" title="Link to this heading">#</a></h2>
 <p><strong>Qué:</strong> buscamos la mejor combinación de hiperparámetros de XGBoost con <strong><code class="docutils literal notranslate"><span class="pre">GridSearchCV</span></code></strong> y
 <strong>validación cruzada estratificada</strong> (<code class="docutils literal notranslate"><span class="pre">StratifiedKFold</span></code>), optimizando <strong>F1</strong>.</p>
 <p><strong>Por qué:</strong> los valores por defecto rara vez son óptimos. La búsqueda en grilla evalúa cada
@@ -1168,6 +2601,13 @@ grilla o usar <code class="docutils literal notranslate"><span class="pre">Rando
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fitting 3 folds for each of 16 candidates, totalling 48 fits
+Mejores hiperparámetros: {&#39;learning_rate&#39;: 0.1, &#39;max_depth&#39;: 6, &#39;n_estimators&#39;: 200, &#39;subsample&#39;: 0.8}
+Mejor F1 en validación cruzada: 0.9964
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>Evaluación del XGBoost optimizado en el conjunto de prueba.</strong> Comparamos su
 desempeño contra el XGBoost por defecto para cuantificar la mejora obtenida con la
@@ -1197,6 +2637,26 @@ optimización.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>XGBoost por defecto  -&gt; F1 = 0.9979
+XGBoost optimizado   -&gt; F1 = 0.9979 | ROC-AUC = 1.0000
+
+Matriz de confusión (XGBoost optimizado):
+[[16816     1]
+ [    4  1179]]
+
+Reporte de clasificación:
+              precision    recall  f1-score   support
+
+      NORMAL       1.00      1.00      1.00     16817
+     Anómalo       1.00      1.00      1.00      1183
+
+    accuracy                           1.00     18000
+   macro avg       1.00      1.00      1.00     18000
+weighted avg       1.00      1.00      1.00     18000
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>Lectura:</strong> si el <code class="docutils literal notranslate"><span class="pre">F1</span></code> optimizado supera al de la tabla 10.3, los hiperparámetros
 hallados mejoran el modelo; si es similar, los valores por defecto ya eran competitivos (lo
@@ -1205,7 +2665,7 @@ para producción es este XGBoost optimizado</strong>, por su eficiencia y desemp
 después con una partición temporal.</p>
 </section>
 <section id="conclusiones">
-<h2>11. Conclusiones<a class="headerlink" href="#conclusiones" title="Permalink to this heading">#</a></h2>
+<h2>11. Conclusiones<a class="headerlink" href="#conclusiones" title="Link to this heading">#</a></h2>
 <p><strong>Sobre los datos (EDA, Módulos 2–3):</strong></p>
 <ol class="arabic simple">
 <li><p><strong>Estructura.</strong> 220.320 registros (1 abr – 31 ago 2018), muestreo de 1 minuto, 52
@@ -1286,14 +2746,16 @@ comportamiento alrededor de las fallas.</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contexto-de-negocio">Contexto de negocio</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuracion-del-entorno-e-importacion-de-librerias">0. Configuración del entorno e importación de librerías</a></li>
@@ -1354,7 +2816,7 @@ By The Jupyter Book Community
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1378,8 +2840,8 @@ By The Jupyter Book Community
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
