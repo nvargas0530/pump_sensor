@@ -1,12 +1,38 @@
+
+# =========================
+# Virtual environments
+# =========================
+jb_env/
+venv/
+env/
+
+# =========================
+# Python cache
+# =========================
 __pycache__/
 *.pyc
+
+# =========================
+# Jupyter Notebook
+# =========================
 .ipynb_checkpoints/
-.venv/
-env/
-.DS_Store
+
+# =========================
+# Jupyter Book / MyST builds
+# =========================
+docs/_build/
+_build/
+site/
+
+# =========================
+# Data files (pesados o locales)
+# =========================
+*.csv
+*.gz
 data/sensor_clean.csv.gz
 sensor.csv
-*.csv
 
-# MyST build outputs
-_build
+# =========================
+# System files
+# =========================
+.DS_Store
