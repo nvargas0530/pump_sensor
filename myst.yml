@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: b6cf3a53-8b3b-43b2-881f-f4a18b59fac4
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/nvargas0530/pump_sensor
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png

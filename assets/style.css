@@ -1,0 +1,94 @@
+/* Estilos del Dashboard de Mantenimiento Predictivo */
+
+body {
+    background-color: #f4f6f9;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 18px 48px;
+}
+
+.encabezado {
+    text-align: center;
+    padding: 18px 0 8px;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-weight: 700;
+    color: #1b2a41;
+}
+
+.encabezado p {
+    color: #6c7a89;
+    margin-top: 6px;
+}
+
+/* Tarjetas KPI */
+.kpi-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.kpi-card {
+    flex: 1 1 200px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    border-top: 4px solid #2c7fb8;
+}
+
+.kpi-value {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #1b2a41;
+}
+
+.kpi-label {
+    font-size: 0.85em;
+    color: #8a99a8;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* Paneles */
+.panel {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 16px 18px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+.control-label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.fila-doble {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.mitad {
+    flex: 1 1 460px;
+}
+
+.pie {
+    text-align: center;
+    color: #8a99a8;
+    font-size: 0.85em;
+    margin-top: 10px;
+}

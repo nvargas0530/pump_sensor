@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+.DS_Store
+data/sensor_clean.csv.gz
+sensor.csv
+*.csv
+
+# MyST build outputs
+_build
