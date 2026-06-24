@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Análisis Exploratorio + Machine Learning — Sensores de una Bomba Industrial &#8212; My sample book</title>
   
@@ -16,57 +17,57 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'EDA_ML_sensor_pump';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -82,8 +83,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="search.html"
       method="get">
@@ -91,6 +103,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -98,8 +111,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -115,8 +128,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -146,18 +158,11 @@
     
     
     <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -177,14 +182,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -203,9 +203,9 @@
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -314,7 +314,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  class="btn btn-sm btn-fullscreen-button"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -328,19 +328,27 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -408,7 +416,7 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="analisis-exploratorio-machine-learning-sensores-de-una-bomba-industrial">
-<h1>Análisis Exploratorio + Machine Learning — Sensores de una Bomba Industrial<a class="headerlink" href="#analisis-exploratorio-machine-learning-sensores-de-una-bomba-industrial" title="Link to this heading">#</a></h1>
+<h1>Análisis Exploratorio + Machine Learning — Sensores de una Bomba Industrial<a class="headerlink" href="#analisis-exploratorio-machine-learning-sensores-de-una-bomba-industrial" title="Permalink to this heading">#</a></h1>
 <p><strong>Mantenimiento predictivo a partir de la telemetría de 52 sensores</strong></p>
 <p>Este notebook aplica de forma integral los <strong>Módulos 2, 3, 4 y 5</strong> del curso
 <em>Ciencia de datos con Python para la toma de decisiones</em>:</p>
@@ -427,7 +435,7 @@ reproducible.</p>
 </div></blockquote>
 <hr class="docutils" />
 <section id="contexto-de-negocio">
-<h2>Contexto de negocio<a class="headerlink" href="#contexto-de-negocio" title="Link to this heading">#</a></h2>
+<h2>Contexto de negocio<a class="headerlink" href="#contexto-de-negocio" title="Permalink to this heading">#</a></h2>
 <p>Una bomba industrial está instrumentada con <strong>52 sensores</strong> que registran una medición
 <strong>cada minuto</strong>. La variable <code class="docutils literal notranslate"><span class="pre">machine_status</span></code> etiqueta el estado (<code class="docutils literal notranslate"><span class="pre">NORMAL</span></code>, <code class="docutils literal notranslate"><span class="pre">RECOVERING</span></code>,
 <code class="docutils literal notranslate"><span class="pre">BROKEN</span></code>). Una parada no planificada detiene la producción y genera sobrecostos.</p>
@@ -435,7 +443,7 @@ reproducible.</p>
 estado anómalo de la máquina</strong> a partir de los sensores, para anticipar fallas.</p>
 </section>
 <section id="configuracion-del-entorno-e-importacion-de-librerias">
-<h2>0. Configuración del entorno e importación de librerías<a class="headerlink" href="#configuracion-del-entorno-e-importacion-de-librerias" title="Link to this heading">#</a></h2>
+<h2>0. Configuración del entorno e importación de librerías<a class="headerlink" href="#configuracion-del-entorno-e-importacion-de-librerias" title="Permalink to this heading">#</a></h2>
 <p><strong>Qué:</strong> importamos las librerías de datos (<code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>), estadística (<code class="docutils literal notranslate"><span class="pre">scipy</span></code>),
 visualización (<code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">seaborn</span></code>, <code class="docutils literal notranslate"><span class="pre">plotly</span></code>) y machine learning (<code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>).</p>
 <p><strong>Por qué:</strong> centralizar las importaciones hace el notebook reproducible y deja explícitas
@@ -458,20 +466,21 @@ las dependencias (listadas en <code class="docutils literal notranslate"><span c
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s2">&quot;display.max_columns&quot;</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s2">&quot;display.width&quot;</span><span class="p">,</span> <span class="mi">160</span><span class="p">)</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;t&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lib&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Librerías cargadas correctamente.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Librerías cargadas correctamente.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Lib
+Librerías cargadas correctamente.
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="carga-y-lectura-del-dataset">
-<h2>1. Carga y lectura del dataset<a class="headerlink" href="#carga-y-lectura-del-dataset" title="Link to this heading">#</a></h2>
+<h2>1. Carga y lectura del dataset<a class="headerlink" href="#carga-y-lectura-del-dataset" title="Permalink to this heading">#</a></h2>
 <p><strong>Qué:</strong> leemos <code class="docutils literal notranslate"><span class="pre">data/sensor.csv.gz</span></code>. El archivo se distribuye <strong>comprimido en gzip</strong>
 porque el CSV original (~119 MB) supera el límite de 100 MB por archivo de GitHub; <code class="docutils literal notranslate"><span class="pre">pandas</span></code>
 lo descomprime al vuelo. Usamos una ruta relativa para que el notebook sea portable.</p>
@@ -490,7 +499,7 @@ lo descomprime al vuelo. Usamos una ruta relativa para que el notebook sea porta
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cargado desde: C:\Users\Sebastian\Desktop\pump_sensor_dash\data\sensor.csv.gz
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cargado desde: D:\nvargas\Downloads\ejercicio_ciencia_datos\pump_sensor_dash\data\sensor.csv.gz
 Dimensiones: 220,320 filas x 55 columnas
 </pre></div>
 </div>
@@ -498,7 +507,7 @@ Dimensiones: 220,320 filas x 55 columnas
 </div>
 </section>
 <section id="exploracion-inicial">
-<h2>2. Exploración inicial<a class="headerlink" href="#exploracion-inicial" title="Link to this heading">#</a></h2>
+<h2>2. Exploración inicial<a class="headerlink" href="#exploracion-inicial" title="Permalink to this heading">#</a></h2>
 <p><strong>Qué:</strong> inspeccionamos las primeras filas (<code class="docutils literal notranslate"><span class="pre">head</span></code>), la forma (<code class="docutils literal notranslate"><span class="pre">shape</span></code>) y la información
 general (<code class="docutils literal notranslate"><span class="pre">info</span></code>).</p>
 <p><strong>Por qué:</strong> es el primer contacto con la estructura: cuántos registros y variables hay,
@@ -538,7 +547,41 @@ qué representa cada columna y dónde podría haber nulos.</p>
       <th>sensor_05</th>
       <th>sensor_06</th>
       <th>sensor_07</th>
-      <th>...</th>
+      <th>sensor_08</th>
+      <th>sensor_09</th>
+      <th>sensor_10</th>
+      <th>sensor_11</th>
+      <th>sensor_12</th>
+      <th>sensor_13</th>
+      <th>sensor_14</th>
+      <th>sensor_15</th>
+      <th>sensor_16</th>
+      <th>sensor_17</th>
+      <th>sensor_18</th>
+      <th>sensor_19</th>
+      <th>sensor_20</th>
+      <th>sensor_21</th>
+      <th>sensor_22</th>
+      <th>sensor_23</th>
+      <th>sensor_24</th>
+      <th>sensor_25</th>
+      <th>sensor_26</th>
+      <th>sensor_27</th>
+      <th>sensor_28</th>
+      <th>sensor_29</th>
+      <th>sensor_30</th>
+      <th>sensor_31</th>
+      <th>sensor_32</th>
+      <th>sensor_33</th>
+      <th>sensor_34</th>
+      <th>sensor_35</th>
+      <th>sensor_36</th>
+      <th>sensor_37</th>
+      <th>sensor_38</th>
+      <th>sensor_39</th>
+      <th>sensor_40</th>
+      <th>sensor_41</th>
+      <th>sensor_42</th>
       <th>sensor_43</th>
       <th>sensor_44</th>
       <th>sensor_45</th>
@@ -564,7 +607,41 @@ qué representa cada columna y dónde podría haber nulos.</p>
       <td>76.45975</td>
       <td>13.41146</td>
       <td>16.13136</td>
-      <td>...</td>
+      <td>15.56713</td>
+      <td>15.05353</td>
+      <td>37.22740</td>
+      <td>47.52422</td>
+      <td>31.11716</td>
+      <td>1.681353</td>
+      <td>419.5747</td>
+      <td>NaN</td>
+      <td>461.8781</td>
+      <td>466.3284</td>
+      <td>2.565284</td>
+      <td>665.3993</td>
+      <td>398.9862</td>
+      <td>880.0001</td>
+      <td>498.8926</td>
+      <td>975.9409</td>
+      <td>627.6740</td>
+      <td>741.7151</td>
+      <td>848.0708</td>
+      <td>429.0377</td>
+      <td>785.1935</td>
+      <td>684.9443</td>
+      <td>594.4445</td>
+      <td>682.8125</td>
+      <td>680.4416</td>
+      <td>433.7037</td>
+      <td>171.9375</td>
+      <td>341.9039</td>
+      <td>195.0655</td>
+      <td>90.32386</td>
+      <td>40.36458</td>
+      <td>31.51042</td>
+      <td>70.57291</td>
+      <td>30.98958</td>
+      <td>31.770832</td>
       <td>41.92708</td>
       <td>39.641200</td>
       <td>65.68287</td>
@@ -588,7 +665,41 @@ qué representa cada columna y dónde podría haber nulos.</p>
       <td>76.45975</td>
       <td>13.41146</td>
       <td>16.13136</td>
-      <td>...</td>
+      <td>15.56713</td>
+      <td>15.05353</td>
+      <td>37.22740</td>
+      <td>47.52422</td>
+      <td>31.11716</td>
+      <td>1.681353</td>
+      <td>419.5747</td>
+      <td>NaN</td>
+      <td>461.8781</td>
+      <td>466.3284</td>
+      <td>2.565284</td>
+      <td>665.3993</td>
+      <td>398.9862</td>
+      <td>880.0001</td>
+      <td>498.8926</td>
+      <td>975.9409</td>
+      <td>627.6740</td>
+      <td>741.7151</td>
+      <td>848.0708</td>
+      <td>429.0377</td>
+      <td>785.1935</td>
+      <td>684.9443</td>
+      <td>594.4445</td>
+      <td>682.8125</td>
+      <td>680.4416</td>
+      <td>433.7037</td>
+      <td>171.9375</td>
+      <td>341.9039</td>
+      <td>195.0655</td>
+      <td>90.32386</td>
+      <td>40.36458</td>
+      <td>31.51042</td>
+      <td>70.57291</td>
+      <td>30.98958</td>
+      <td>31.770832</td>
       <td>41.92708</td>
       <td>39.641200</td>
       <td>65.68287</td>
@@ -612,7 +723,41 @@ qué representa cada columna y dónde podría haber nulos.</p>
       <td>73.54598</td>
       <td>13.32465</td>
       <td>16.03733</td>
-      <td>...</td>
+      <td>15.61777</td>
+      <td>15.01013</td>
+      <td>37.86777</td>
+      <td>48.17723</td>
+      <td>32.08894</td>
+      <td>1.708474</td>
+      <td>420.8480</td>
+      <td>NaN</td>
+      <td>462.7798</td>
+      <td>459.6364</td>
+      <td>2.500062</td>
+      <td>666.2234</td>
+      <td>399.9418</td>
+      <td>880.4237</td>
+      <td>501.3617</td>
+      <td>982.7342</td>
+      <td>631.1326</td>
+      <td>740.8031</td>
+      <td>849.8997</td>
+      <td>454.2390</td>
+      <td>778.5734</td>
+      <td>715.6266</td>
+      <td>661.5740</td>
+      <td>721.8750</td>
+      <td>694.7721</td>
+      <td>441.2635</td>
+      <td>169.9820</td>
+      <td>343.1955</td>
+      <td>200.9694</td>
+      <td>93.90508</td>
+      <td>41.40625</td>
+      <td>31.25000</td>
+      <td>69.53125</td>
+      <td>30.46875</td>
+      <td>31.770830</td>
       <td>41.66666</td>
       <td>39.351852</td>
       <td>65.39352</td>
@@ -636,7 +781,41 @@ qué representa cada columna y dónde podría haber nulos.</p>
       <td>76.98898</td>
       <td>13.31742</td>
       <td>16.24711</td>
-      <td>...</td>
+      <td>15.69734</td>
+      <td>15.08247</td>
+      <td>38.57977</td>
+      <td>48.65607</td>
+      <td>31.67221</td>
+      <td>1.579427</td>
+      <td>420.7494</td>
+      <td>NaN</td>
+      <td>462.8980</td>
+      <td>460.8858</td>
+      <td>2.509521</td>
+      <td>666.0114</td>
+      <td>399.1046</td>
+      <td>878.8917</td>
+      <td>499.0430</td>
+      <td>977.7520</td>
+      <td>625.4076</td>
+      <td>739.2722</td>
+      <td>847.7579</td>
+      <td>474.8731</td>
+      <td>779.5091</td>
+      <td>690.4011</td>
+      <td>686.1111</td>
+      <td>754.6875</td>
+      <td>683.3831</td>
+      <td>446.2493</td>
+      <td>166.4987</td>
+      <td>343.9586</td>
+      <td>193.1689</td>
+      <td>101.04060</td>
+      <td>41.92708</td>
+      <td>31.51042</td>
+      <td>72.13541</td>
+      <td>30.46875</td>
+      <td>31.510420</td>
       <td>40.88541</td>
       <td>39.062500</td>
       <td>64.81481</td>
@@ -660,7 +839,41 @@ qué representa cada columna y dónde podría haber nulos.</p>
       <td>76.58897</td>
       <td>13.35359</td>
       <td>16.21094</td>
-      <td>...</td>
+      <td>15.69734</td>
+      <td>15.08247</td>
+      <td>39.48939</td>
+      <td>49.06298</td>
+      <td>31.95202</td>
+      <td>1.683831</td>
+      <td>419.8926</td>
+      <td>NaN</td>
+      <td>461.4906</td>
+      <td>468.2206</td>
+      <td>2.604785</td>
+      <td>663.2111</td>
+      <td>400.5426</td>
+      <td>882.5874</td>
+      <td>498.5383</td>
+      <td>979.5755</td>
+      <td>627.1830</td>
+      <td>737.6033</td>
+      <td>846.9182</td>
+      <td>408.8159</td>
+      <td>785.2307</td>
+      <td>704.6937</td>
+      <td>631.4814</td>
+      <td>766.1458</td>
+      <td>702.4431</td>
+      <td>433.9081</td>
+      <td>164.7498</td>
+      <td>339.9630</td>
+      <td>193.8770</td>
+      <td>101.70380</td>
+      <td>42.70833</td>
+      <td>31.51042</td>
+      <td>76.82291</td>
+      <td>30.98958</td>
+      <td>31.510420</td>
       <td>41.40625</td>
       <td>38.773150</td>
       <td>65.10416</td>
@@ -674,7 +887,6 @@ qué representa cada columna y dónde podría haber nulos.</p>
     </tr>
   </tbody>
 </table>
-<p>5 rows × 55 columns</p>
 </div></div></div>
 </div>
 <div class="cell docutils container">
@@ -769,11 +981,11 @@ memory usage: 92.5 MB
 <code class="docutils literal notranslate"><span class="pre">machine_status</span></code>.</p>
 </section>
 <section id="tipos-de-datos-diagnostico-transformacion-y-verificacion">
-<h2>3. Tipos de datos: diagnóstico, transformación y verificación<a class="headerlink" href="#tipos-de-datos-diagnostico-transformacion-y-verificacion" title="Link to this heading">#</a></h2>
+<h2>3. Tipos de datos: diagnóstico, transformación y verificación<a class="headerlink" href="#tipos-de-datos-diagnostico-transformacion-y-verificacion" title="Permalink to this heading">#</a></h2>
 <p>El curso insiste en <strong>revisar los tipos de datos, transformarlos según el análisis y volver
 a revisarlos</strong>. Lo hacemos en tres pasos.</p>
 <section id="tipos-de-datos-antes-de-transformar">
-<h3>3.1 Tipos de datos ANTES de transformar<a class="headerlink" href="#tipos-de-datos-antes-de-transformar" title="Link to this heading">#</a></h3>
+<h3>3.1 Tipos de datos ANTES de transformar<a class="headerlink" href="#tipos-de-datos-antes-de-transformar" title="Permalink to this heading">#</a></h3>
 <p><strong>Qué/Por qué:</strong> vemos cómo <code class="docutils literal notranslate"><span class="pre">pandas</span></code> infirió cada tipo al leer el CSV. Detectaremos
 columnas mal tipadas que conviene corregir.</p>
 <div class="cell docutils container">
@@ -814,7 +1026,7 @@ ordenables por severidad (<code class="docutils literal notranslate"><span class
 </ul>
 </section>
 <section id="transformacion-de-los-tipos-necesarios">
-<h3>3.2 Transformación de los tipos necesarios<a class="headerlink" href="#transformacion-de-los-tipos-necesarios" title="Link to this heading">#</a></h3>
+<h3>3.2 Transformación de los tipos necesarios<a class="headerlink" href="#transformacion-de-los-tipos-necesarios" title="Permalink to this heading">#</a></h3>
 <p><strong>Qué:</strong> convertimos <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> a <code class="docutils literal notranslate"><span class="pre">datetime</span></code> y <code class="docutils literal notranslate"><span class="pre">machine_status</span></code> a <code class="docutils literal notranslate"><span class="pre">category</span></code> ordenada.</p>
 <p><strong>Por qué:</strong> <code class="docutils literal notranslate"><span class="pre">datetime</span></code> habilita operaciones temporales (orden, remuestreo, interpolación
 por tiempo); <code class="docutils literal notranslate"><span class="pre">category</span></code> ahorra memoria y permite ordenar/segmentar correctamente por estado.</p>
@@ -839,7 +1051,7 @@ por tiempo); <code class="docutils literal notranslate"><span class="pre">catego
 </div>
 </section>
 <section id="tipos-de-datos-despues-de-transformar">
-<h3>3.3 Tipos de datos DESPUÉS de transformar<a class="headerlink" href="#tipos-de-datos-despues-de-transformar" title="Link to this heading">#</a></h3>
+<h3>3.3 Tipos de datos DESPUÉS de transformar<a class="headerlink" href="#tipos-de-datos-despues-de-transformar" title="Permalink to this heading">#</a></h3>
 <p><strong>Qué/Por qué:</strong> confirmamos que las conversiones se aplicaron correctamente antes de seguir.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -883,7 +1095,7 @@ nulos.</p>
 </section>
 </section>
 <section id="identificacion-de-valores-nulos-y-tratamiento-propuesto">
-<h2>4. Identificación de valores nulos y tratamiento propuesto<a class="headerlink" href="#identificacion-de-valores-nulos-y-tratamiento-propuesto" title="Link to this heading">#</a></h2>
+<h2>4. Identificación de valores nulos y tratamiento propuesto<a class="headerlink" href="#identificacion-de-valores-nulos-y-tratamiento-propuesto" title="Permalink to this heading">#</a></h2>
 <p>Conforme al <strong>Módulo 3</strong>, cuantificamos los faltantes en <strong>conteo</strong> y <strong>porcentaje</strong>. El
 conteo dimensiona el problema; el porcentaje guía la estrategia (regla práctica del curso:
 <em>eliminar</em> si ≤ 5 %, <em>imputar</em> si es mayor).</p>
@@ -1219,7 +1431,7 @@ conteo dimensiona el problema; el porcentaje guía la estrategia (regla práctic
 </div>
 </div>
 <section id="analisis-y-tratamiento-por-tipo-de-variable">
-<h3>Análisis y tratamiento (por tipo de variable)<a class="headerlink" href="#analisis-y-tratamiento-por-tipo-de-variable" title="Link to this heading">#</a></h3>
+<h3>Análisis y tratamiento (por tipo de variable)<a class="headerlink" href="#analisis-y-tratamiento-por-tipo-de-variable" title="Permalink to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Caso</p></th>
@@ -1256,7 +1468,7 @@ no requiere imputación por moda. El tratamiento se aplica en la sección 6.</p>
 </section>
 </section>
 <section id="identificacion-y-manejo-de-datos-duplicados">
-<h2>5. Identificación y manejo de datos duplicados<a class="headerlink" href="#identificacion-y-manejo-de-datos-duplicados" title="Link to this heading">#</a></h2>
+<h2>5. Identificación y manejo de datos duplicados<a class="headerlink" href="#identificacion-y-manejo-de-datos-duplicados" title="Permalink to this heading">#</a></h2>
 <p><strong>Qué:</strong> contamos filas completamente duplicadas y, por ser serie de tiempo, también
 <strong>marcas de tiempo repetidas</strong>.</p>
 <p><strong>Por qué:</strong> los duplicados sesgan frecuencias y estadísticas; un <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> repetido sería
@@ -1295,7 +1507,7 @@ documentada como buena práctica (no altera nada porque no hay duplicados).</p>
 </div>
 </section>
 <section id="limpieza-y-tratamiento-aplicado">
-<h2>6. Limpieza y tratamiento aplicado<a class="headerlink" href="#limpieza-y-tratamiento-aplicado" title="Link to this heading">#</a></h2>
+<h2>6. Limpieza y tratamiento aplicado<a class="headerlink" href="#limpieza-y-tratamiento-aplicado" title="Permalink to this heading">#</a></h2>
 <p>Aplicamos las decisiones anteriores: (1) eliminar <code class="docutils literal notranslate"><span class="pre">Unnamed:</span> <span class="pre">0</span></code> y <code class="docutils literal notranslate"><span class="pre">sensor_15</span></code>; (2) usar
 <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> como índice temporal; (3) imputar los sensores por interpolación temporal.
 <code class="docutils literal notranslate"><span class="pre">machine_status</span></code> ya quedó como categórica en la sección 3.</p>
@@ -1343,7 +1555,7 @@ Nuevas dimensiones: (220320, 52)
 nulos y la cadencia de 1 minuto intacta.</p>
 </section>
 <section id="estadisticas-descriptivas-modulo-2">
-<h2>7. Estadísticas descriptivas (Módulo 2)<a class="headerlink" href="#estadisticas-descriptivas-modulo-2" title="Link to this heading">#</a></h2>
+<h2>7. Estadísticas descriptivas (Módulo 2)<a class="headerlink" href="#estadisticas-descriptivas-modulo-2" title="Permalink to this heading">#</a></h2>
 <p>Resumimos con <code class="docutils literal notranslate"><span class="pre">describe()</span></code> y luego construimos un cuadro completo de medidas (tendencia
 central, dispersión, posición, asimetría, curtosis) para un sensor representativo, más una
 comparación por estado de la máquina (descriptivo bivariado categórica vs. numérica).</p>
@@ -2016,7 +2228,7 @@ dtype: float64
 </div>
 </section>
 <section id="analisis-de-distribuciones-modulo-2">
-<h2>8. Análisis de distribuciones (Módulo 2)<a class="headerlink" href="#analisis-de-distribuciones-modulo-2" title="Link to this heading">#</a></h2>
+<h2>8. Análisis de distribuciones (Módulo 2)<a class="headerlink" href="#analisis-de-distribuciones-modulo-2" title="Permalink to this heading">#</a></h2>
 <p><strong>Qué:</strong> histogramas + densidad de varios sensores y una <strong>prueba de normalidad de
 Shapiro–Wilk</strong> sobre una muestra.</p>
 <p><strong>Por qué:</strong> verificar simetría y colas pesadas orienta transformaciones y el tipo de prueba
@@ -2039,7 +2251,7 @@ Shapiro–Wilk</strong> sobre una muestra.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/59885e96c08a6cce59600810248a596f7820883a018da6857aad46a6d7b75bcc.png" src="_images/59885e96c08a6cce59600810248a596f7820883a018da6857aad46a6d7b75bcc.png" />
+<img alt="_images/1f7e68d8d5b66999b2779509450ed3d0d5aace8d64a03e64840125af56ad9e32.png" src="_images/1f7e68d8d5b66999b2779509450ed3d0d5aace8d64a03e64840125af56ad9e32.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2064,11 +2276,11 @@ rechaza la normalidad), comportamiento típico de señales físicas con regímen
 distintos.</p>
 </section>
 <section id="visualizaciones-para-identificar-patrones-y-anomalias-modulo-3">
-<h2>9. Visualizaciones para identificar patrones y anomalías (Módulo 3)<a class="headerlink" href="#visualizaciones-para-identificar-patrones-y-anomalias-modulo-3" title="Link to this heading">#</a></h2>
+<h2>9. Visualizaciones para identificar patrones y anomalías (Módulo 3)<a class="headerlink" href="#visualizaciones-para-identificar-patrones-y-anomalias-modulo-3" title="Permalink to this heading">#</a></h2>
 <p>Usamos <strong>Plotly</strong> para descubrir la estructura de los datos y el comportamiento alrededor de
 las fallas.</p>
 <section id="distribucion-de-la-variable-objetivo-machine-status">
-<h3>9.1 Distribución de la variable objetivo <code class="docutils literal notranslate"><span class="pre">machine_status</span></code><a class="headerlink" href="#distribucion-de-la-variable-objetivo-machine-status" title="Link to this heading">#</a></h3>
+<h3>9.1 Distribución de la variable objetivo <code class="docutils literal notranslate"><span class="pre">machine_status</span></code><a class="headerlink" href="#distribucion-de-la-variable-objetivo-machine-status" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conteo</span> <span class="o">=</span> <span class="n">df_clean</span><span class="p">[</span><span class="s2">&quot;machine_status&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -2134,7 +2346,7 @@ las fallas.</p>
 registros <code class="docutils literal notranslate"><span class="pre">BROKEN</span></code></strong> en cinco meses. Esto será clave para el modelado.</p>
 </section>
 <section id="eventos-de-falla-en-el-tiempo">
-<h3>9.2 Eventos de falla en el tiempo<a class="headerlink" href="#eventos-de-falla-en-el-tiempo" title="Link to this heading">#</a></h3>
+<h3>9.2 Eventos de falla en el tiempo<a class="headerlink" href="#eventos-de-falla-en-el-tiempo" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
@@ -2171,7 +2383,7 @@ registros <code class="docutils literal notranslate"><span class="pre">BROKEN</s
 <strong>predecible</strong> a partir de la telemetría.</p>
 </section>
 <section id="matriz-de-correlacion-entre-sensores">
-<h3>9.3 Matriz de correlación entre sensores<a class="headerlink" href="#matriz-de-correlacion-entre-sensores" title="Link to this heading">#</a></h3>
+<h3>9.3 Matriz de correlación entre sensores<a class="headerlink" href="#matriz-de-correlacion-entre-sensores" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">corr</span> <span class="o">=</span> <span class="n">df_clean</span><span class="p">[</span><span class="n">sensores</span><span class="p">]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
@@ -2198,11 +2410,11 @@ selección de variables o PCA.</p>
 </section>
 </section>
 <section id="machine-learning-clasificacion-del-estado-de-la-maquina-modulo-5">
-<h2>10. Machine Learning — Clasificación del estado de la máquina (Módulo 5)<a class="headerlink" href="#machine-learning-clasificacion-del-estado-de-la-maquina-modulo-5" title="Link to this heading">#</a></h2>
+<h2>10. Machine Learning — Clasificación del estado de la máquina (Módulo 5)<a class="headerlink" href="#machine-learning-clasificacion-del-estado-de-la-maquina-modulo-5" title="Permalink to this heading">#</a></h2>
 <p>Construiremos y compararemos varios modelos de <strong>clasificación supervisada</strong> y
 seleccionaremos el mejor, siguiendo el Módulo 5.</p>
 <section id="definicion-del-problema-y-de-la-variable-objetivo">
-<h3>10.1 Definición del problema y de la variable objetivo<a class="headerlink" href="#definicion-del-problema-y-de-la-variable-objetivo" title="Link to this heading">#</a></h3>
+<h3>10.1 Definición del problema y de la variable objetivo<a class="headerlink" href="#definicion-del-problema-y-de-la-variable-objetivo" title="Permalink to this heading">#</a></h3>
 <p><strong>Qué:</strong> definimos un objetivo <strong>binario</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code> = estado <strong>anómalo</strong> (<code class="docutils literal notranslate"><span class="pre">RECOVERING</span></code> o
 <code class="docutils literal notranslate"><span class="pre">BROKEN</span></code>) y <code class="docutils literal notranslate"><span class="pre">0</span></code> = <code class="docutils literal notranslate"><span class="pre">NORMAL</span></code>.</p>
 <p><strong>Por qué:</strong> la clase <code class="docutils literal notranslate"><span class="pre">BROKEN</span></code> tiene solo 7 registros, insuficiente para aprender por sí
@@ -2237,7 +2449,7 @@ Name: count, dtype: int64
 </div>
 </section>
 <section id="preparacion-submuestreo-particion-y-escalado">
-<h3>10.2 Preparación: submuestreo, partición y escalado<a class="headerlink" href="#preparacion-submuestreo-particion-y-escalado" title="Link to this heading">#</a></h3>
+<h3>10.2 Preparación: submuestreo, partición y escalado<a class="headerlink" href="#preparacion-submuestreo-particion-y-escalado" title="Permalink to this heading">#</a></h3>
 <p><strong>Qué:</strong> tomamos un <strong>submuestreo estratificado</strong> de 60.000 registros (conserva la
 proporción de clases), partimos en <strong>entrenamiento (70 %) y prueba (30 %)</strong> de forma
 estratificada y <strong>estandarizamos</strong> las variables (ajustando el escalador solo con
@@ -2278,7 +2490,7 @@ aún más conservadora.</p>
 </div>
 </section>
 <section id="entrenamiento-y-comparacion-de-modelos">
-<h3>10.3 Entrenamiento y comparación de modelos<a class="headerlink" href="#entrenamiento-y-comparacion-de-modelos" title="Link to this heading">#</a></h3>
+<h3>10.3 Entrenamiento y comparación de modelos<a class="headerlink" href="#entrenamiento-y-comparacion-de-modelos" title="Permalink to this heading">#</a></h3>
 <p><strong>Qué:</strong> entrenamos seis modelos de clasificación del Módulo 5 —<strong>Regresión Logística,
 Árbol de Decisión, Random Forest, KNN, Naive Bayes y XGBoost</strong>— y los evaluamos con
 <strong>Accuracy, Precision, Recall, F1 y ROC-AUC</strong>.</p>
@@ -2390,8 +2602,8 @@ librería no estuviera instalada (está incluida en <code class="docutils litera
       <th>0</th>
       <td>XGBoost</td>
       <td>0.9997</td>
-      <td>0.9992</td>
-      <td>0.9966</td>
+      <td>0.9983</td>
+      <td>0.9975</td>
       <td>0.9979</td>
       <td>1.0000</td>
     </tr>
@@ -2446,7 +2658,7 @@ librería no estuviera instalada (está incluida en <code class="docutils litera
 </div>
 </section>
 <section id="visualizacion-comparativa-y-seleccion-del-mejor-modelo">
-<h3>10.4 Visualización comparativa y selección del mejor modelo<a class="headerlink" href="#visualizacion-comparativa-y-seleccion-del-mejor-modelo" title="Link to this heading">#</a></h3>
+<h3>10.4 Visualización comparativa y selección del mejor modelo<a class="headerlink" href="#visualizacion-comparativa-y-seleccion-del-mejor-modelo" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">tabla</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">&quot;Modelo&quot;</span><span class="p">,</span>
@@ -2469,7 +2681,7 @@ librería no estuviera instalada (está incluida en <code class="docutils litera
 </div>
 </section>
 <section id="evaluacion-detallada-del-mejor-modelo">
-<h3>10.5 Evaluación detallada del mejor modelo<a class="headerlink" href="#evaluacion-detallada-del-mejor-modelo" title="Link to this heading">#</a></h3>
+<h3>10.5 Evaluación detallada del mejor modelo<a class="headerlink" href="#evaluacion-detallada-del-mejor-modelo" title="Permalink to this heading">#</a></h3>
 <p><strong>Qué:</strong> para el modelo ganador mostramos la <strong>matriz de confusión</strong>, el <strong>reporte de
 clasificación</strong> y la <strong>curva ROC</strong>.</p>
 <p><strong>Por qué:</strong> la matriz de confusión revela qué tipo de error comete (falsos negativos =
@@ -2495,7 +2707,7 @@ discriminante.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/800021ac16b1be28e2ce47a46b8351a2e5e0bedb45ec07da2b18a0846d2992b8.png" src="_images/800021ac16b1be28e2ce47a46b8351a2e5e0bedb45ec07da2b18a0846d2992b8.png" />
+<img alt="_images/8f623ae299a9d93a00c49dd7fd7ad0e48c803db96134d20e22ef73fa7ac4be94.png" src="_images/8f623ae299a9d93a00c49dd7fd7ad0e48c803db96134d20e22ef73fa7ac4be94.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
       NORMAL       1.00      1.00      1.00     16817
@@ -2531,7 +2743,7 @@ weighted avg       1.00      1.00      1.00     18000
 </div>
 </section>
 <section id="importancia-de-variables-random-forest">
-<h3>10.6 Importancia de variables (Random Forest)<a class="headerlink" href="#importancia-de-variables-random-forest" title="Link to this heading">#</a></h3>
+<h3>10.6 Importancia de variables (Random Forest)<a class="headerlink" href="#importancia-de-variables-random-forest" title="Permalink to this heading">#</a></h3>
 <p><strong>Qué/Por qué:</strong> si el ganador es un modelo de árboles, su <strong>importancia de variables</strong>
 indica qué sensores son más informativos para detectar la anomalía —útil para priorizar
 instrumentación y para el dashboard.</p>
@@ -2555,7 +2767,7 @@ instrumentación y para el dashboard.</p>
 </section>
 </section>
 <section id="optimizacion-de-hiperparametros-de-xgboost-gridsearch-validacion-cruzada">
-<h2>10.7 Optimización de hiperparámetros de XGBoost (GridSearch + validación cruzada)<a class="headerlink" href="#optimizacion-de-hiperparametros-de-xgboost-gridsearch-validacion-cruzada" title="Link to this heading">#</a></h2>
+<h2>10.7 Optimización de hiperparámetros de XGBoost (GridSearch + validación cruzada)<a class="headerlink" href="#optimizacion-de-hiperparametros-de-xgboost-gridsearch-validacion-cruzada" title="Permalink to this heading">#</a></h2>
 <p><strong>Qué:</strong> buscamos la mejor combinación de hiperparámetros de XGBoost con <strong><code class="docutils literal notranslate"><span class="pre">GridSearchCV</span></code></strong> y
 <strong>validación cruzada estratificada</strong> (<code class="docutils literal notranslate"><span class="pre">StratifiedKFold</span></code>), optimizando <strong>F1</strong>.</p>
 <p><strong>Por qué:</strong> los valores por defecto rara vez son óptimos. La búsqueda en grilla evalúa cada
@@ -2639,11 +2851,11 @@ optimización.</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>XGBoost por defecto  -&gt; F1 = 0.9979
-XGBoost optimizado   -&gt; F1 = 0.9979 | ROC-AUC = 1.0000
+XGBoost optimizado   -&gt; F1 = 0.9983 | ROC-AUC = 1.0000
 
 Matriz de confusión (XGBoost optimizado):
 [[16816     1]
- [    4  1179]]
+ [    3  1180]]
 
 Reporte de clasificación:
               precision    recall  f1-score   support
@@ -2665,7 +2877,7 @@ para producción es este XGBoost optimizado</strong>, por su eficiencia y desemp
 después con una partición temporal.</p>
 </section>
 <section id="conclusiones">
-<h2>11. Conclusiones<a class="headerlink" href="#conclusiones" title="Link to this heading">#</a></h2>
+<h2>11. Conclusiones<a class="headerlink" href="#conclusiones" title="Permalink to this heading">#</a></h2>
 <p><strong>Sobre los datos (EDA, Módulos 2–3):</strong></p>
 <ol class="arabic simple">
 <li><p><strong>Estructura.</strong> 220.320 registros (1 abr – 31 ago 2018), muestreo de 1 minuto, 52
@@ -2709,16 +2921,16 @@ comportamiento alrededor de las fallas.</p>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "jb_env"
         },
         kernelOptions: {
-            name: "python3",
+            name: "jb_env",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'jb_env'</script>
 
                 </article>
               
@@ -2746,16 +2958,14 @@ comportamiento alrededor de las fallas.</p>
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item"><div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+  <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contexto-de-negocio">Contexto de negocio</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuracion-del-entorno-e-importacion-de-librerias">0. Configuración del entorno e importación de librerías</a></li>
@@ -2816,7 +3026,7 @@ By The Jupyter Book Community
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2022.
       <br/>
     
   </p>
@@ -2840,8 +3050,8 @@ By The Jupyter Book Community
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
