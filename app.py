@@ -90,8 +90,9 @@ corr_matrix = df[sensores].corr()
 # --------------------------------------------------------------------------- #
 def preparar_datos_ml(df_in, sensores_in):
     """Construye X e y para clasificación binaria NORMAL vs Anómalo."""
-    X = df_in[sensores_in].copy()
-    y = (df_in["machine_status"].astype(str)
+    df_reset = df_in.reset_index()
+    X = df_reset[sensores_in].copy()
+    y = (df_reset["machine_status"].astype(str)
          .isin(["RECOVERING", "BROKEN"])).astype(int)
     return X, y
 
