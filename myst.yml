@@ -4,21 +4,12 @@ version: 1
 project:
   id: b6cf3a53-8b3b-43b2-881f-f4a18b59fac4
   title: Mantenimiento Predictivo de Bomba Industrial
-  subtitle: EDA, Machine Learning y Dashboard interactivo para detección de anomalías
   description: EDA, Machine Learning y Dashboard para mantenimiento predictivo de bombas industriales.
   github: https://github.com/nvargas0530/pump_sensor
-  authors:
-    - name: Nestor Vargas
-    - name: Carlos Perez
-    - name: Emperatriz Villalba
-    - name: Luis Narvaez
   toc:
     - file: README.md
     - title: Análisis Exploratorio y Machine Learning
       children:
         - file: notebooks/EDA_ML_sensor_pump.ipynb
-    - title: Pitch del Proyecto
-      children:
-        - file: docs/pitch_pump_anomaly.html
 site:
   template: book-theme

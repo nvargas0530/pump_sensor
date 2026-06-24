@@ -1,16 +1,11 @@
-# Mantenimiento Predictivo de Bomba Industrial
+# Welcome to your Jupyter Book
 
-**Proyecto de Ciencia de Datos — Detección de anomalías en sensores industriales**
+This is a small sample book to give you a feel for how book content is
+structured.
+It shows off a few of the major file types, as well as some sample content.
+It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
 
-## Equipo
-- Nestor Vargas
-- Carlos Perez
-- Emperatriz Villalba
-- Luis Narvaez
+Check out the content pages bundled with this sample book to see more.
 
-## Sobre el proyecto
-Este proyecto analiza la telemetría de 52 sensores de una bomba industrial para
-detectar anomalías que preceden a una falla, mediante análisis exploratorio (EDA)
-y modelos de Machine Learning (Random Forest, XGBoost).
-
-[Explora el análisis →](notebooks/EDA_ML_sensor_pump.ipynb)
+```{tableofcontents}
+```
